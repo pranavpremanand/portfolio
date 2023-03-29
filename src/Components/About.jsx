@@ -34,8 +34,24 @@ const About = () => {
           </div>
           <div className="mt-10">
             <h1 className="text-2xl md:text-3xl font-bold uppercase tracking-widest underline mb-5">
-              Skills
+              Specialize Skills
             </h1>
+            <div className="my-5">
+              <div className="flex justify-between mb-1">
+                <div className="text-lg font-medium text-cyan-900 dark:text-cyan-900">
+                  JavaScript
+                </div>
+                <div className="text-lg font-medium text-cyan-900 dark:text-cyan-900">
+                  85%
+                </div>
+              </div>
+              <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-400">
+                <div
+                  className="bg-cyan-800 h-2.5 rounded-full"
+                  style={{ width: "85%" }}
+                ></div>
+              </div>
+            </div>
             <div className="my-5">
               <div className="flex justify-between mb-1">
                 <div className="text-lg font-medium text-cyan-900 dark:text-cyan-900">
