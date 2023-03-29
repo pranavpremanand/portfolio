@@ -74,13 +74,13 @@ const About = () => {
                   Express.js
                 </div>
                 <div className="text-lg font-medium text-cyan-900 dark:text-cyan-900">
-                  75%
+                  78%
                 </div>
               </div>
               <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-400">
                 <div
                   className="bg-cyan-800 h-2.5 rounded-full"
-                  style={{ width: "75%" }}
+                  style={{ width: "78%" }}
                 ></div>
               </div>
             </div>
