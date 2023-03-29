@@ -18,7 +18,7 @@ const About = () => {
               </div>
               <div className="flex flex-wrap gap-5 font-medium text-lg">
                 <div className="hidden sm:block">Profile:</div>
-                <div>MERN Stack Developer</div>
+                <div>Software Developer</div>
               </div>
               <div className="flex flex-wrap gap-5 font-medium text-lg">
                 <div className="hidden sm:block">Email:</div>
@@ -104,12 +104,12 @@ const About = () => {
         </div>
         <div className="md:w-5/12">
           <p className="text-lg">
-            Hello there, I'm Pranav. A MERN stack developer who have passion for
+            Hey, It's Pranav. I'm a self-taught Software developer who have passion for
             creating beautiful, efficient, and responsive web applications that
             are both user-friendly and scalable.
           </p>
           <p className="text-lg">
-            As a MERN stack developer, I specialize in working with MongoDB,
+            I specialize in working with MongoDB,
             Express.js, React, and Node.js. My expertise in these technologies
             allows me to build web applications from scratch and integrate
             different functionalities into them.
