@@ -2,23 +2,24 @@ import React, { useState } from "react";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const handleClick = ()=>setOpen(false)
 
   return (
     <>
       <div className="hidden w-full md:flex h-20 bg-cyan-900 text-white justify-end items-center gap-10 pr-10">
-        <a className="link-underline link-underline-black" href="#home">
+        <a onClick={handleClick} className="link-underline link-underline-black" href="#home">
           Home
         </a>
-        <a className="link-underline link-underline-black" href="#about">
+        <a onClick={handleClick} className="link-underline link-underline-black" href="#about">
           About
         </a>
-        {/* <a className="link-underline link-underline-black" href="#services">
+        {/* <a onClick={handleClick} className="link-underline link-underline-black" href="#services">
         Services
       </a> */}
-        <a className="link-underline link-underline-black" href="#projects">
+        <a onClick={handleClick} className="link-underline link-underline-black" href="#projects">
           Projects
         </a>
-        <a className="link-underline link-underline-black" href="#contact">
+        <a onClick={handleClick} className="link-underline link-underline-black" href="#contact">
           Contact
         </a>
       </div>
@@ -43,7 +44,7 @@ const Navbar = () => {
       {open && (
         <div className="top-20 w-full flex md:hidden flex-col py-2 gap-2 bg-cyan-100">
           <>
-            <a
+            <a onClick={handleClick}
               className="rounded-full hover:bg-cyan-900 hover:text-white p-2 pl-5 font-normal text-cyan-900"
               href="#home"
             >
@@ -51,7 +52,7 @@ const Navbar = () => {
             </a>
           </>
           <>
-            <a
+            <a onClick={handleClick}
               className="rounded-full hover:bg-cyan-900 hover:text-white p-2 pl-5 font-normal text-cyan-900"
               href="#about"
             >
@@ -62,7 +63,7 @@ const Navbar = () => {
         Services
       </a> */}
           <>
-            <a
+            <a onClick={handleClick}
               className="rounded-full hover:bg-cyan-900 hover:text-white p-2 pl-5 font-normal text-cyan-900"
               href="#projects"
             >
@@ -70,7 +71,7 @@ const Navbar = () => {
             </a>
           </>
           <>
-            <a
+            <a onClick={handleClick}
               className="rounded-full hover:bg-cyan-900 hover:text-white p-2 pl-5 font-normal text-cyan-900"
               href="#contact"
             >
