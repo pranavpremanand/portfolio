@@ -39,8 +39,9 @@ const Navbar = () => {
               d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
             />
           </svg>
+      </div>
       {open && (
-        <div className="top-20 flex md:hidden flex-col py-2 gap-2 bg-cyan-100">
+        <div className="top-20 w-full flex md:hidden flex-col py-2 gap-2 bg-cyan-100">
           <>
             <a
               className="rounded-full hover:bg-cyan-900 hover:text-white p-2 pl-5 font-normal text-cyan-900"
@@ -78,7 +79,6 @@ const Navbar = () => {
           </>
         </div>
       )}
-      </div>
     </>
   );
 };
