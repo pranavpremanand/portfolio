@@ -34,7 +34,7 @@ const About = () => {
           </div>
           <div className="mt-10">
             <h1 className="text-2xl md:text-3xl font-bold uppercase tracking-widest underline mb-5">
-              Specialize Skills
+              Specialized Skills
             </h1>
             <div className="my-5">
               <div className="flex justify-between mb-1">
