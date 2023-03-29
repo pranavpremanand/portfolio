@@ -5,7 +5,7 @@ import { TypeAnimation } from "react-type-animation";
 const Banner = () => {
   return (
     <div
-    id="home"
+      id="home"
       className="banner flex justify-center h-96 sm:h-screen"
       style={{
         backgroundImage: `url(${BannerImg})`,
@@ -13,7 +13,13 @@ const Banner = () => {
       }}
     >
       <div className="absolute flex justify-start flex-col gap-6 items-center text-white bottom-1/4">
-        <h1 className="text-4xl sm:text-5xl font-semibold">Pranav</h1>
+        <TypeAnimation
+          sequence={["Pranav",3000]}
+          wrapper="span"
+            cursor={true}
+            repeat={Infinity}
+          className="text-4xl sm:text-5xl font-semibold uppercase"
+        />
         <TypeAnimation
           sequence={[
             "Software Developer",
