@@ -13,21 +13,21 @@ const About = () => {
             <img src={Profile} className="w-full sm:w-2/4" alt="" />
             <div className="flex w-full flex-col gap-2">
               <div className="flex flex-wrap gap-5 font-medium text-lg">
-                <div className="hidden sm:block">Name:</div>
+                <div className="hidden md:block">Name:</div>
                 <div>Pranav. M</div>
               </div>
               <div className="flex flex-wrap gap-5 font-medium text-lg">
-                <div className="hidden sm:block">Profile:</div>
+                <div className="hidden md:block">Profile:</div>
                 <div>Software Developer</div>
               </div>
-              <div className="flex flex-wrap gap-5 font-medium text-lg">
-                <div className="hidden sm:block">Email:</div>
+              <div className="flex flex-wrap gap-6 font-medium text-lg">
+                <div className="hidden md:block">Email:</div>
                 <a href="https://mailto:mpranavprem@gmail.com">
                   mpranavprem@gmail.com
                 </a>
               </div>
-              <div className="flex flex-wrap gap-5 font-medium text-lg">
-                <div className="hidden sm:block">Phone:</div>
+              <div className="flex flex-wrap gap-4 font-medium text-lg">
+                <div className="hidden md:block">Phone:</div>
                 <a href="https://wa.me/+919633063113">+91 9633063113</a>
               </div>
             </div>
