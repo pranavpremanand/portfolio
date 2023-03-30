@@ -12,7 +12,7 @@ const Banner = () => {
         backgroundPosition: "80% 10%",
       }}
     >
-      <div className="absolute flex justify-start flex-col gap-2 items-center text-white bottom-1/4">
+      <div className="absolute flex justify-start flex-col gap-2 items-center text-white bottom-14 sm:bottom-28">
         <h1 className="text-4xl sm:text-5xl font-semibold uppercase">Pranav</h1>
         <TypeAnimation
           sequence={[
