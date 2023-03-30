@@ -5,8 +5,9 @@ import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
 import { Toaster } from "react-hot-toast";
-import { useContext, useState } from "react";
+import { useState } from "react";
 import { SpinnerContext } from "./Contexts/SpinnerContext";
+import { motion } from "framer-motion";
 
 export const Spinner = () => {
   return (
@@ -104,13 +105,22 @@ function App() {
       >
         <Toaster position="top-center" reverseOrder={false} />
         {spinner && <Spinner />}
-        <div NameName="z-10" style={{ position: "fixed", width: "100%" ,zIndex:'1000'}}>
-          <Navbar />
-        </div>
-        <Banner />
-        <About />
-        <Contact />
-        <Footer />
+        <motion.div
+          initial={{ opacity: 0, transition: { duration: 1 } }}
+          animate={{ opacity: 1 }}
+          className="parts"
+        >
+          <div
+            className="z-10"
+            style={{ position: "fixed", width: "100%", zIndex: "1000" }}
+          >
+            <Navbar />
+          </div>
+          <Banner />
+          <About />
+          <Contact />
+          <Footer />
+        </motion.div>
       </SpinnerContext.Provider>
     </div>
   );
