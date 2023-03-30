@@ -1,8 +1,10 @@
-import React, { useRef, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-hot-toast";
+import { SpinnerContext } from "../Contexts/SpinnerContext";
 
 const Contact = () => {
+  const { setSpinner } = useContext(SpinnerContext);
   const form = useRef();
   const [formData, setFormdata] = useState({
     name: "",
@@ -19,6 +21,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+      setSpinner();
       const response = await emailjs.sendForm(
         process.env.REACT_APP_SERVICE_ID,
         process.env.REACT_APP_TEMPLATE_ID,
@@ -26,6 +29,7 @@ const Contact = () => {
         process.env.REACT_APP_PUBLIC_KEY
       );
       if (response.text === "OK") {
+        setSpinner();
         toast("Message Sent", {
           icon: "✅",
           style: {
@@ -37,7 +41,7 @@ const Contact = () => {
         e.target.reset();
       }
     } catch (err) {
-      console.log(err);
+      setSpinner();
       toast("Something went wrong", {
         icon: "❌",
         style: {
