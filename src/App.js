@@ -106,12 +106,11 @@ function App() {
         <Toaster position="top-center" reverseOrder={false} />
         {spinner && <Spinner />}
         <motion.div
-          initial={{ opacity: 0, transition: { duration: 1 } }}
+          initial={{ opacity: 0, transition: { duration: 2 } }}
           animate={{ opacity: 1 }}
           className="parts"
         >
           <div
-            className="z-10"
             style={{ position: "fixed", width: "100%", zIndex: "1000" }}
           >
             <Navbar />
