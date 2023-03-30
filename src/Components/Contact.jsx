@@ -178,7 +178,7 @@ const Contact = () => {
                 type="submit"
                 className="rounded-full uppercase tracking-widest text-lg md:text-xl py-4 w-full bg-cyan-900 text-white"
               >
-                Send email
+                Send Message
               </button>
             </form>
           </div>
