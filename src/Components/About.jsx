@@ -3,7 +3,10 @@ import Profile from "../Imgs/Profile.jpg";
 
 const About = () => {
   return (
-    <div id="about" className="m-5 sm:m-10 p-5 sm:p-10 shadow-2xl shadow-slate-900 drop-shadow-md rounded-lg bg-cyan-50 flex-wrap">
+    <div
+      id="about"
+      className="m-5 sm:m-10 p-5 sm:p-10 shadow-2xl shadow-slate-900 drop-shadow-md rounded-lg bg-cyan-50 flex-wrap"
+    >
       <h1 className="text-3xl md:mt-0 md:text-4xl font-bold tracking-widest underline text-center mb-5">
         About Me
       </h1>
@@ -22,13 +25,11 @@ const About = () => {
               </div>
               <div className="flex flex-wrap gap-6 font-medium text-lg">
                 <div className="hidden md:block">Email:</div>
-                <a href="https://mailto:mpranavprem@gmail.com">
-                  mpranavprem@gmail.com
-                </a>
+                <div>mpranavprem@gmail.com</div>
               </div>
               <div className="flex flex-wrap gap-4 font-medium text-lg">
                 <div className="hidden md:block">Phone:</div>
-                <a href="https://wa.me/+919633063113">+91 9633063113</a>
+                <div>+91 9633063113</div>
               </div>
             </div>
           </div>
@@ -120,15 +121,15 @@ const About = () => {
         </div>
         <div className="md:w-5/12">
           <p className="text-lg">
-            Hey, It's Pranav. I'm a self-taught Software developer who have passion for
-            creating beautiful, efficient, and responsive web applications that
-            are both user-friendly and scalable.
+            Hey, It's Pranav. I'm a self-taught Software developer who have
+            passion for creating beautiful, efficient, and responsive web
+            applications that are both user-friendly and scalable.
           </p>
           <p className="text-lg">
-            I specialize in working with MongoDB,
-            Express.js, React, and Node.js. My expertise in these technologies
-            allows me to build web applications from scratch and integrate
-            different functionalities into them.
+            I specialize in working with MongoDB, Express.js, React, and
+            Node.js. My expertise in these technologies allows me to build web
+            applications from scratch and integrate different functionalities
+            into them.
           </p>
         </div>
       </div>
