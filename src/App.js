@@ -13,7 +13,7 @@ export const Spinner = () => {
   return (
     <div aria-label="Loading..." className="spinner-parent" role="status">
       <svg
-        className="spinner-border h-12 w-12 animate-spin stroke-gray-500"
+        className="spinner-border h-12 w-12 animate-spin stroke-cyan-900"
         viewBox="0 0 256 256"
       >
         <line
