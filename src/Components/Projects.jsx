@@ -11,7 +11,7 @@ export const projects = [
     img: Img1,
     link:'https://applyjobs.netlify.app',
     description:
-      "A website where you can apply for job different job positions.",
+      "A website where you can apply for different job positions.",
   },
   {
     title: "Footballers App",
