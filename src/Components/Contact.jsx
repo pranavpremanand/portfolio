@@ -62,7 +62,7 @@ const Contact = () => {
           <h5 className="text-2xl text-center md:text-3xl tracking-wider font-medium underline sm:text-start">
             Send Message
           </h5>
-          <div className="mt-5">
+          <div className="mt-6">
             <form ref={form} id="form" onSubmit={handleSubmit}>
               <div className="w-full mb-5">
                 <p className="bg-white pt-0 pr-2 pb-0 pl-2 -mt-3 mr-0 mb-0 ml-2 text-md font-medium absolute">
@@ -176,7 +176,7 @@ const Contact = () => {
               </div>
               <button
                 type="submit"
-                className="rounded-full uppercase tracking-widest text-lg md:text-xl py-4 w-full bg-cyan-900 text-white"
+                className="rounded-full uppercase tracking-widest text-lg md:text-xl py-4 w-full bg-cyan-900 hover:bg-cyan-700 text-white"
               >
                 Send Message
               </button>
@@ -188,11 +188,11 @@ const Contact = () => {
         <h5 className="text-2xl text-center tracking-wider md:text-3xl font-medium underline sm:text-start">
           Get in Touch
         </h5>
-        <div className="mt-5 flex sm:justify-start justify-center gap-5 sm:gap-3">
+        <div className="mt-6 flex sm:justify-start justify-center gap-5 sm:gap-3">
           <div>
             <a
               href="https://wa.me/+919633063113"
-              className="flex items-center gap-3 font-medium"
+              className="flex items-center font-medium"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -207,7 +207,7 @@ const Contact = () => {
           <div>
             <a
               href="https://linkedin.com/in/pranavpremanand"
-              className="flex items-center gap-3 font-medium"
+              className="flex items-center font-medium"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -223,7 +223,7 @@ const Contact = () => {
           <div>
             <a
               href="https://github.com/pranavpremanand"
-              className="flex items-center gap-3 font-medium"
+              className="flex items-center font-medium"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -239,7 +239,7 @@ const Contact = () => {
           <div>
             <a
               href="https://instagram.com/pranav_premanand"
-              className="flex items-center gap-3 font-medium"
+              className="flex items-center font-medium"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -254,7 +254,7 @@ const Contact = () => {
           <div>
             <a
               href="https://mailto:mpranavprem@gmail.com"
-              className="flex items-center gap-3 font-medium"
+              className="flex items-center font-medium"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

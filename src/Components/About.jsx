@@ -1,5 +1,14 @@
 import React from "react";
 import Profile from "../Imgs/Profile.jpg";
+import Resume from "../Files/Pranav.M-Resume.pdf";
+
+export const skills = [
+  { name: "JavaScript", percentage: "85%" },
+  { name: "React.js", percentage: "85%" },
+  { name: "Node.js", percentage: "83%" },
+  { name: "Express.js", percentage: "78%" },
+  { name: "MongoDB", percentage: "80%" },
+];
 
 const About = () => {
   return (
@@ -7,29 +16,57 @@ const About = () => {
       id="about"
       className="m-5 sm:m-10 p-5 sm:p-10 shadow-2xl shadow-slate-900 drop-shadow-md rounded-lg bg-cyan-50 flex-wrap"
     >
-      <h1 className="text-3xl md:mt-0 md:text-4xl font-bold tracking-widest underline text-center mb-5">
+      <h1 className="text-2xl md:text-3xl md:mt-0 font-bold tracking-widest underline text-center mb-5">
         About Me
       </h1>
       <div className="flex flex-wrap-reverse gap-5 sm:gap-0 justify-around">
         <div className="md:w-5/12 w-full flex flex-col">
           <div className="flex flex-wrap justify-center gap-5">
-            <img src={Profile} className="w-full sm:w-2/4" alt="" />
+            <img
+              src={Profile}
+              className="w-full mt-3 rounded-lg md:mt-0 sm:w-2/4"
+              alt=""
+            />
             <div className="flex w-full flex-col gap-2">
-              <div className="flex flex-wrap gap-5 font-medium text-lg">
-                <div className="hidden md:block">Name:</div>
-                <div>Pranav. M</div>
+              <div className="flex flex-wrap gap-9 font-medium text-lg">
+                <div className="hidden lg:inline">Name</div>
+                <div>
+                  <div className="hidden lg:inline ">: &nbsp;</div>Pranav. M
+                </div>
               </div>
-              <div className="flex flex-wrap gap-5 font-medium text-lg">
-                <div className="hidden md:block">Profile:</div>
-                <div>Software Developer</div>
+              <div className="flex flex-wrap gap-9 font-medium text-lg">
+                <div className="hidden lg:inline">Profile</div>
+                <div>
+                  <div className="hidden lg:inline ">: &nbsp;</div>Software
+                  Developer
+                </div>
               </div>
-              <div className="flex flex-wrap gap-6 font-medium text-lg">
-                <div className="hidden md:block">Email:</div>
-                <div>mpranavprem@gmail.com</div>
+              <div className="flex flex-wrap gap-10 font-medium text-lg">
+                <div className="hidden lg:inline">Email</div>
+                <div>
+                  <div className="hidden lg:inline ">: &nbsp;</div>
+                  mpranavprem@gmail.com
+                </div>
               </div>
-              <div className="flex flex-wrap gap-4 font-medium text-lg">
-                <div className="hidden md:block">Phone:</div>
-                <div>+91 9633063113</div>
+              <div className="flex flex-wrap gap-8 font-medium text-lg">
+                <div className="hidden lg:inline">Phone</div>
+                <div>
+                  <div className="hidden lg:inline ">: &nbsp;</div>+91
+                  9633063113
+                </div>
+              </div>
+              <div className="flex flex-wrap gap-4 font-medium items-center">
+                <div className="hidden lg:inline text-lg">Resume</div>
+                <div>
+                  <div className="hidden lg:inline ">: &nbsp;</div>
+                  <a
+                    className="underline text-blue-500 text-md"
+                    href={Resume}
+                    download="Pranav M - Resume"
+                  >
+                    Download resume
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -37,86 +74,26 @@ const About = () => {
             <h1 className="text-2xl md:text-3xl font-bold uppercase tracking-widest underline mb-5">
               Specialized Skills
             </h1>
-            <div className="my-5">
-              <div className="flex justify-between mb-1">
-                <div className="text-lg font-medium text-cyan-900 dark:text-cyan-900">
-                  JavaScript
+            {skills.map((skill) => {
+              return (
+                <div className="my-5">
+                  <div className="flex justify-between mb-1">
+                    <div className="text-lg font-medium text-cyan-900 dark:text-cyan-900">
+                      {skill.name}
+                    </div>
+                    <div className="text-lg font-medium text-cyan-900 dark:text-cyan-900">
+                      {skill.percentage}
+                    </div>
+                  </div>
+                  <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-400">
+                    <div
+                      className="bg-cyan-800 hover:bg-cyan-600 h-2.5 rounded-full"
+                      style={{ width: skill.percentage }}
+                    ></div>
+                  </div>
                 </div>
-                <div className="text-lg font-medium text-cyan-900 dark:text-cyan-900">
-                  85%
-                </div>
-              </div>
-              <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-400">
-                <div
-                  className="bg-cyan-800 h-2.5 rounded-full"
-                  style={{ width: "85%" }}
-                ></div>
-              </div>
-            </div>
-            <div className="my-5">
-              <div className="flex justify-between mb-1">
-                <div className="text-lg font-medium text-cyan-900 dark:text-cyan-900">
-                  React.js
-                </div>
-                <div className="text-lg font-medium text-cyan-900 dark:text-cyan-900">
-                  85%
-                </div>
-              </div>
-              <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-400">
-                <div
-                  className="bg-cyan-800 h-2.5 rounded-full"
-                  style={{ width: "85%" }}
-                ></div>
-              </div>
-            </div>
-            <div className="my-5">
-              <div className="flex justify-between mb-1">
-                <div className="text-lg font-medium text-cyan-900 dark:text-cyan-900">
-                  Node.js
-                </div>
-                <div className="text-lg font-medium text-cyan-900 dark:text-cyan-900">
-                  80%
-                </div>
-              </div>
-              <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-400">
-                <div
-                  className="bg-cyan-800 h-2.5 rounded-full"
-                  style={{ width: "80%" }}
-                ></div>
-              </div>
-            </div>
-            <div className="my-5">
-              <div className="flex justify-between mb-1">
-                <div className="text-lg font-medium text-cyan-900 dark:text-cyan-900">
-                  Express.js
-                </div>
-                <div className="text-lg font-medium text-cyan-900 dark:text-cyan-900">
-                  78%
-                </div>
-              </div>
-              <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-400">
-                <div
-                  className="bg-cyan-800 h-2.5 rounded-full"
-                  style={{ width: "78%" }}
-                ></div>
-              </div>
-            </div>
-            <div className="my-5">
-              <div className="flex justify-between mb-1">
-                <div className="text-lg font-medium text-cyan-900 dark:text-cyan-900">
-                  MongoDB
-                </div>
-                <div className="text-lg font-medium text-cyan-900 dark:text-cyan-900">
-                  80%
-                </div>
-              </div>
-              <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-400">
-                <div
-                  className="bg-cyan-800 h-2.5 rounded-full"
-                  style={{ width: "80%" }}
-                ></div>
-              </div>
-            </div>
+              );
+            })}
           </div>
         </div>
         <div className="md:w-5/12">
