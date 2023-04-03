@@ -16,16 +16,16 @@ const About = () => {
       id="about"
       className="m-5 sm:m-10 p-5 sm:p-10 shadow-2xl shadow-slate-900 drop-shadow-md rounded-lg bg-sky-50 flex-wrap"
     >
-      <h1 className="text-2xl capitalize md:text-3xl md:mt-0 font-bold tracking-widest underline text-center mb-2 sm:mb-5">
+      <h1 className="text-xl sm:text-2xl capitalize md:text-3xl md:mt-0 font-bold tracking-widest underline text-center mb-2 sm:mb-5">
         about me
       </h1>
       <div className="flex flex-wrap-reverse gap-5 sm:gap-0 justify-around">
-        <div className="md:w-5/12 xl:w-4/12 w-full flex flex-col">
+        <div className="md:w-10/12 xl:w-4/12 w-full flex flex-col">
           <div className="flex flex-wrap justify-center gap-5">
             <div className="flex w-full flex-col gap-2">
               <img
                 src={Profile}
-                className="self-center md:self-start object-fill w-full sm:w-2/4 md:w-3/4 max-w-xs mt-2 sm:mt-4 rounded-md md:mt-0"
+                className="self-center lg:self-start object-fill w-full sm:w-2/4 md:w-3/4 max-w-xs mt-2 sm:mt-4 rounded-md lg:mt-0"
                 alt=""
               />
               <div className="flex flex-col gap-2 mt-3">
@@ -86,7 +86,7 @@ const About = () => {
             </div>
           </div>
           <div className="mt-10">
-            <h1 className="text-2xl md:text-3xl font-bold uppercase tracking-widest underline mb-5">
+            <h1 className="text-xl sm:text-2xl md:text-3xl text-center md:text-start font-bold uppercase tracking-widest underline mb-5">
               Specialized Skills
             </h1>
             {skills.map((skill) => {
@@ -111,7 +111,7 @@ const About = () => {
             })}
           </div>
         </div>
-        <div className="md:w-5/12 xl:w-6/12 2xl:w-7/12">
+        <div className="md:w-10/12 xl:w-6/12 2xl:w-7/12">
           <p className="text-sm sm:text-md md:text-lg">
             Hey, It's Pranav. I'm a self-taught Software Developer who have
             passion for creating beautiful, efficient, and responsive web

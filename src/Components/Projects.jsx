@@ -19,7 +19,7 @@ export const projects = [
       "You can search any football player's information here and create your Best 11 team.",
   },
   {
-    title: "Travels Web site",
+    title: "Travels Website",
     img: Img3,
     link: "https://travelandtourismagency.netlify.app",
     description:
@@ -40,7 +40,7 @@ const Projects = () => {
       id="projects"
       className="m-5 sm:m-10 p-5 sm:p-10 shadow-2xl shadow-slate-900 drop-shadow-md rounded-lg bg-gray-200 flex-wrap"
     >
-      <h1 className="text-2xl uppercase md:text-3xl md:mt-0 font-bold tracking-widest underline text-center mb-5">
+      <h1 className="text-xl sm:text-2xl uppercase md:text-3xl md:mt-0 font-bold tracking-widest underline text-center mb-5">
         Projects
       </h1>
       <div className="flex justify-center gap-5 px-1 lg:px-10 flex-wrap">
