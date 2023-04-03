@@ -1,10 +1,11 @@
 import React, { useState } from "react";
+import { Link } from "react-scroll";
 
 export const navbarOptions = [
-  { title: "Home", href: "#home" },
-  { title: "About", href: "#about" },
-  { title: "Projects", href: "#projects" },
-  { title: "Contact", href: "#contact" },
+  { title: "Home", href: "home" },
+  { title: "About", href: "about" },
+  { title: "Projects", href: "projects" },
+  { title: "Contact", href: "contact" },
 ];
 
 const Navbar = () => {
@@ -13,16 +14,20 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="hidden w-full md:flex h-20 bg-cyan-900 text-white justify-end items-center gap-10 pr-10">
+      <div id="navbar" className="hidden w-full md:flex h-16 bg-cyan-900 text-white justify-end items-center gap-10 pr-10">
         {navbarOptions.map((option) => {
           return (
-            <a
+            <Link
               onClick={handleClick}
-              className="link-underline link-underline-black"
-              href={option.href}
+              className="link-underline cursor-pointer link-underline-black"
+              to={option.href}
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={800}
             >
               {option.title}
-            </a>
+            </Link>
           );
         })}
       </div>
@@ -44,16 +49,20 @@ const Navbar = () => {
         </svg>
       </div>
       {open && (
-        <div className="top-20 w-full flex md:hidden flex-col py-2 gap-2 bg-cyan-100">
+        <div className="top-16 w-full flex md:hidden flex-col py-2 gap-2 bg-cyan-100">
           {navbarOptions.map((option) => {
             return (
-              <a
+              <Link
                 onClick={handleClick}
-                className="rounded-full hover:bg-cyan-900 hover:text-white p-2 pl-5 font-normal text-cyan-900"
-                href={option.href}
+                className="rounded-full cursor-pointer hover:bg-cyan-900 hover:text-white p-2 pl-5 font-normal text-cyan-900"
+                to={option.href}
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={1000}
               >
                 {option.title}
-              </a>
+              </Link>
             );
           })}
         </div>
