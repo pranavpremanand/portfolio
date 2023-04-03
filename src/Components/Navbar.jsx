@@ -22,7 +22,7 @@ const Navbar = () => {
           return (
             <Link
               onClick={handleClick}
-              className="link-underline cursor-pointer link-underline-black"
+              className="text-sm sm:text-md link-underline cursor-pointer link-underline-black"
               to={option.href}
               spy={true}
               smooth={true}
@@ -57,7 +57,7 @@ const Navbar = () => {
             return (
               <Link
                 onClick={handleClick}
-                className="rounded-full cursor-pointer hover:bg-sky-900 hover:text-white p-2 pl-5 font-normal text-sky-900"
+                className="text-sm sm:text-md rounded-full cursor-pointer hover:bg-sky-900 hover:text-white p-2 pl-5 font-normal text-sky-900"
                 to={option.href}
                 spy={true}
                 smooth={true}

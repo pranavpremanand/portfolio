@@ -1,5 +1,4 @@
 import React from "react";
-import Banner from "../Imgs/Banner.jpg";
 import Img1 from "../Imgs/applyjobssite.png";
 import Img2 from "../Imgs/footballersapp.png";
 import Img4 from "../Imgs/dashboard.png";
@@ -47,10 +46,10 @@ const Projects = () => {
       <div className="flex justify-center gap-5 px-1 lg:px-10 flex-wrap">
         {projects.map((project) => {
           return (
-            <div className="w-full md:w-5/12 lg:w-4/12 2xl:w-2/12 mb-2">
+            <div className="w-full border rounded-md md:w-5/12 lg:w-4/12 2xl:w-2/12 mb-2">
               <div className="max-h-40 w-full overflow-hidden rounded-t-md">
                 <img
-                  className="object-fill w-full ease-in-out hover:scale-125 transition duration-700 cursor-pointer"
+                  className="object-fill w-full ease-in-out md:hover:scale-125 transition duration-700 cursor-pointer"
                   src={project.img}
                   alt=""
                 />

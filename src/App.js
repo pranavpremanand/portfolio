@@ -17,7 +17,7 @@ function App() {
     setSpinner((prev) => !prev);
   };
   return (
-    <div className="App">
+    <div className="App bg-sky-100">
       <SpinnerContext.Provider
         value={{ spinner: spinnerStatus, setSpinner: spinnerStatus }}
       >

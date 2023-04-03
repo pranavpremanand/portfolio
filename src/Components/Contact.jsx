@@ -55,7 +55,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="mt-10 md:mt-0 m-5 flex justify-around shadow-2xl rounded-lg shadow-slate-900 flex-wrap p-5 md:p-10 md:m-10"
+      className="mt-10 bg-white md:mt-0 m-5 flex justify-around shadow-2xl rounded-lg shadow-slate-900 flex-wrap p-5 md:p-10 md:m-10"
     >
       <div className="w-full sm:w-5/12">
         <div className="">
@@ -176,7 +176,7 @@ const Contact = () => {
               </div>
               <button
                 type="submit"
-                className="rounded-full uppercase tracking-widest text-lg md:text-xl py-3 sm:py-4 w-full bg-sky-900 hover:bg-sky-700 text-white"
+                className="rounded-full uppercase tracking-widest text-md sm:text-lg md:text-xl py-3.5 sm:py-4 w-full bg-sky-900 hover:bg-sky-700 text-white"
               >
                 Send Message
               </button>
@@ -196,7 +196,7 @@ const Contact = () => {
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 sm:h-7 sm:w-7 text-green-400"
+                className="h-6 w-6 text-green-400"
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >
@@ -211,7 +211,7 @@ const Contact = () => {
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 sm:h-7 sm:w-7"
+                className="h-6 w-6"
                 fill="currentColor"
                 style={{ color: "#0077b5" }}
                 viewBox="0 0 24 24"
@@ -227,7 +227,7 @@ const Contact = () => {
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 sm:h-7 sm:w-7"
+                className="h-6 w-6"
                 fill="currentColor"
                 style={{ color: "#333" }}
                 viewBox="0 0 24 24"
@@ -243,7 +243,7 @@ const Contact = () => {
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 sm:h-7 sm:w-7 text-pink-600"
+                className="h-6 w-6 text-pink-600"
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >
@@ -258,7 +258,7 @@ const Contact = () => {
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 sm:h-7 sm:w-7"
+                className="h-6 w-6"
                 fill="currentColor"
                 style={{ color: "#ea4335" }}
                 viewBox="0 0 24 24"
