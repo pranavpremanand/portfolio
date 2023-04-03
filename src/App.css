@@ -23,6 +23,11 @@
   background-position: 0 100%;
 }
 
+.nav-item .active{
+  background-size: 100% 2px;
+  background-position: 0 100%;
+}
+
 .banner {
   position: relative;
   width: 100%;

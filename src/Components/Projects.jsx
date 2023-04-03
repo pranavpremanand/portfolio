@@ -79,7 +79,7 @@ const Projects = () => {
                 </div>
                 <hr />
                 <div className="flex">
-                  <p className="text-sm mt-2 overflow-ellipsis overflow-hidden">
+                  <p className="text-sm lg:text-md mt-2 overflow-ellipsis overflow-hidden">
                     {project.description}
                   </p>
                 </div>

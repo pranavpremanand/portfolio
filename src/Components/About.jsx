@@ -12,7 +12,10 @@ export const skills = [
 
 const About = () => {
   return (
-    <div className="m-5 sm:m-10 p-5 sm:p-10 shadow-2xl shadow-slate-900 drop-shadow-md rounded-lg bg-sky-50 flex-wrap">
+    <div
+      id="about"
+      className="m-5 sm:m-10 p-5 sm:p-10 shadow-2xl shadow-slate-900 drop-shadow-md rounded-lg bg-sky-50 flex-wrap"
+    >
       <h1 className="text-2xl capitalize md:text-3xl md:mt-0 font-bold tracking-widest underline text-center mb-2 sm:mb-5">
         about me
       </h1>
@@ -22,59 +25,62 @@ const About = () => {
             <div className="flex w-full flex-col gap-2">
               <img
                 src={Profile}
-                className="object-fill w-full sm:w-2/4 md:w-3/4 max-w-xs my-2 rounded-md md:mt-0"
+                className="self-center md:self-start object-fill w-full sm:w-2/4 md:w-3/4 max-w-xs mt-2 sm:mt-4 rounded-md md:mt-0"
                 alt=""
               />
-              <div className="flex flex-wrap gap-9 font-medium text-md md:text-lg">
-                <div className="hidden lg:inline">Name</div>
-                <div>
-                  <div className="hidden lg:inline ">: &nbsp;</div>Pranav. M
+              <div className="flex flex-col gap-2 mt-3">
+                <div className="flex flex-wrap gap-7 font-medium text-md md:text-lg">
+                  <div className="hidden lg:inline">Name</div>
+                  <div>
+                    <div className="hidden lg:inline ">: &nbsp;</div>
+                    Pranav. M
+                  </div>
                 </div>
-              </div>
-              <div className="flex flex-wrap gap-9 font-medium text-md md:text-lg">
-                <div className="hidden lg:inline">Profile</div>
-                <div>
-                  <div className="hidden lg:inline ">: &nbsp;</div>Software
-                  Developer
+                <div className="flex flex-wrap gap-7 font-medium text-md md:text-lg">
+                  <div className="hidden lg:inline">Profile</div>
+                  <div>
+                    <div className="hidden lg:inline ">: &nbsp;</div>
+                    Software Developer
+                  </div>
                 </div>
-              </div>
-              <div className="flex flex-wrap gap-10 font-medium text-md md:text-lg">
-                <div className="hidden lg:inline">Email</div>
-                <div>
-                  <div className="hidden lg:inline ">: &nbsp;</div>
-                  mpranavprem@gmail.com
+                <div className="flex flex-wrap gap-8 font-medium text-md md:text-lg">
+                  <div className="hidden lg:inline">Email</div>
+                  <div>
+                    <div className="hidden lg:inline ">: &nbsp;</div>
+                    mpranavprem@gmail.com
+                  </div>
                 </div>
-              </div>
-              <div className="flex flex-wrap gap-8 font-medium text-md md:text-lg">
-                <div className="hidden lg:inline">Phone</div>
-                <div>
-                  <div className="hidden lg:inline ">: &nbsp;</div>+91
-                  9633063113
+                <div className="flex flex-wrap gap-6 font-medium text-md md:text-lg">
+                  <div className="hidden lg:inline">Phone</div>
+                  <div>
+                    <div className="hidden lg:inline ">: &nbsp;</div>
+                    +91 9633063113
+                  </div>
                 </div>
-              </div>
-              <div className="flex flex-wrap gap-4 text-md md:text-lg font-medium items-center">
-                <div className="hidden lg:inline">Resume</div>
-                <div>
-                  <div className="hidden lg:inline ">: &nbsp;</div>
-                  <a
-                    className="underline flex gap-1 text-sky-700 text-sm sm:text-md md:text-lg"
-                    href={Resume}
-                    download="Pranav M - Resume"
-                  >
-                    Download resume
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      className="w-5 h-5 text-sky-900"
+                <div className="flex flex-wrap gap-2 text-md md:text-lg font-medium items-center">
+                  <div className="hidden lg:inline">Resume</div>
+                  <div className="flex">
+                    <div className="hidden lg:inline">: &nbsp;</div>
+                    <a
+                      className="underline flex items-center gap-1 text-sky-700 text-sm sm:text-md md:text-lg"
+                      href={Resume}
+                      download="Pranav M - Resume"
                     >
-                      <path
-                        fill-rule="evenodd"
-                        d="M2 4.75C2 3.784 2.784 3 3.75 3h4.836c.464 0 .909.184 1.237.513l1.414 1.414a.25.25 0 00.177.073h4.836c.966 0 1.75.784 1.75 1.75v8.5A1.75 1.75 0 0116.25 17H3.75A1.75 1.75 0 012 15.25V4.75zm8.75 4a.75.75 0 00-1.5 0v2.546l-.943-1.048a.75.75 0 10-1.114 1.004l2.25 2.5a.75.75 0 001.114 0l2.25-2.5a.75.75 0 10-1.114-1.004l-.943 1.048V8.75z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                  </a>
+                      Download resume
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        className="w-5 h-5 text-sky-900"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M2 4.75C2 3.784 2.784 3 3.75 3h4.836c.464 0 .909.184 1.237.513l1.414 1.414a.25.25 0 00.177.073h4.836c.966 0 1.75.784 1.75 1.75v8.5A1.75 1.75 0 0116.25 17H3.75A1.75 1.75 0 012 15.25V4.75zm8.75 4a.75.75 0 00-1.5 0v2.546l-.943-1.048a.75.75 0 10-1.114 1.004l2.25 2.5a.75.75 0 001.114 0l2.25-2.5a.75.75 0 10-1.114-1.004l-.943 1.048V8.75z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

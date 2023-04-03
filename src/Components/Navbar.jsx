@@ -22,11 +22,11 @@ const Navbar = () => {
           return (
             <Link
               onClick={handleClick}
-              className="text-sm sm:text-md link-underline cursor-pointer link-underline-black"
+              className="nav-item text-sm sm:text-md link-underline cursor-pointer link-underline-black"
               to={option.href}
               spy={true}
               smooth={true}
-              offset={50}
+              offset={-100}
               duration={1000}
             >
               {option.title}
@@ -52,7 +52,7 @@ const Navbar = () => {
         </svg>
       </div>
       {open && (
-        <div className="top-16 w-full flex md:hidden flex-col py-2 gap-2 bg-sky-100">
+        <div className="top-16 transition duration-300 ease-linear w-full flex md:hidden flex-col py-2 gap-2 bg-sky-100">
           {navbarOptions.map((option) => {
             return (
               <Link
@@ -61,7 +61,7 @@ const Navbar = () => {
                 to={option.href}
                 spy={true}
                 smooth={true}
-                offset={50}
+                offset={-70}
                 duration={1000}
               >
                 {option.title}

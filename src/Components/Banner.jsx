@@ -1,7 +1,7 @@
 import React from "react";
 import BannerImg from "../Imgs/Banner.jpg";
 import { TypeAnimation } from "react-type-animation";
-import Resume from '../Files/Pranav.M-Resume.pdf'
+import Resume from "../Files/Pranav.M-Resume.pdf";
 
 const Banner = () => {
   return (
@@ -13,10 +13,7 @@ const Banner = () => {
         backgroundPosition: "80% 10%",
       }}
     >
-      <div
-        id="about"
-        className="absolute flex justify-start flex-col gap-2 items-center text-white bottom-14 sm:bottom-28"
-      >
+      <div className="absolute flex justify-start flex-col gap-2 items-center text-white bottom-14 sm:bottom-28">
         <h1 className="text-4xl sm:text-5xl font-semibold uppercase">Pranav</h1>
         <TypeAnimation
           sequence={[
