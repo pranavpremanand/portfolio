@@ -12,21 +12,19 @@ export const skills = [
 
 const About = () => {
   return (
-    <div
-      className="m-5 sm:m-10 p-5 sm:p-10 shadow-2xl shadow-slate-900 drop-shadow-md rounded-lg bg-cyan-50 flex-wrap"
-    >
+    <div className="m-5 sm:m-10 p-5 sm:p-10 shadow-2xl shadow-slate-900 drop-shadow-md rounded-lg bg-sky-50 flex-wrap">
       <h1 className="text-2xl md:text-3xl md:mt-0 font-bold tracking-widest underline text-center mb-5">
         About Me
       </h1>
       <div className="flex flex-wrap-reverse gap-5 sm:gap-0 justify-around">
-        <div className="md:w-5/12 w-full flex flex-col">
+        <div className="md:w-5/12 xl:w-4/12 w-full flex flex-col">
           <div className="flex flex-wrap justify-center gap-5">
-            <img
-              src={Profile}
-              className="w-full mt-3 rounded-lg md:mt-0 sm:w-2/4"
-              alt=""
-            />
             <div className="flex w-full flex-col gap-2">
+              <img
+                src={Profile}
+                className="object-fill w-full sm:w-2/4 md:w-3/4 max-w-xs mt-3 rounded-md md:mt-0"
+                alt=""
+              />
               <div className="flex flex-wrap gap-9 font-medium text-md md:text-lg">
                 <div className="hidden lg:inline">Name</div>
                 <div>
@@ -59,11 +57,11 @@ const About = () => {
                 <div>
                   <div className="hidden lg:inline ">: &nbsp;</div>
                   <a
-                    className="underline text-blue-500 text-sm md:text-md"
+                    className="underline text-blue-500 text-md md:text-lg"
                     href={Resume}
                     download="Pranav M - Resume"
                   >
-                    Download resume
+                    Download resume here
                   </a>
                 </div>
               </div>
@@ -77,16 +75,16 @@ const About = () => {
               return (
                 <div className="my-5">
                   <div className="flex justify-between mb-1">
-                    <div className="text-md md:text-lg font-medium text-cyan-900 dark:text-cyan-900">
+                    <div className="text-md md:text-lg font-medium text-sky-900 dark:text-sky-900">
                       {skill.name}
                     </div>
-                    <div className="text-md md:text-lg font-medium text-cyan-900 dark:text-cyan-900">
+                    <div className="text-md md:text-lg font-medium text-sky-900 dark:text-sky-900">
                       {skill.percentage}
                     </div>
                   </div>
                   <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-400">
                     <div
-                      className="bg-cyan-800 hover:bg-cyan-600 h-2.5 rounded-full"
+                      className="bg-sky-800 hover:bg-sky-600 h-2.5 rounded-full"
                       style={{ width: skill.percentage }}
                     ></div>
                   </div>
@@ -95,15 +93,13 @@ const About = () => {
             })}
           </div>
         </div>
-        <div className="md:w-5/12">
-          <p className="text-md md:text-lg">
-            Hey, It's Pranav. I'm a self-taught Software developer who have
+        <div className="md:w-5/12 xl:w-6/12 2xl:w-7/12">
+          <p className="sm:text-md md:text-lg">
+            Hey, It's Pranav. I'm a self-taught Software Developer who have
             passion for creating beautiful, efficient, and responsive web
             applications that are both user-friendly and scalable.
-          </p>
-          <p className="text-md md:text-lg">
-            I specialize in working with MongoDB, Express.js, React, and
-            Node.js. My expertise in these technologies allows me to build web
+            <br />I specialize in working with React, Node.js, Express.js and
+            MongoDB. My expertise in these technologies allows me to build web
             applications from scratch and integrate different functionalities
             into them.
           </p>

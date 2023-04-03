@@ -14,7 +14,10 @@ const Navbar = () => {
 
   return (
     <>
-      <div id="navbar" className="hidden w-full md:flex h-16 bg-cyan-900 text-white justify-end items-center gap-10 pr-10">
+      <div
+        id="navbar"
+        className="hidden w-full md:flex h-16 bg-sky-900 text-white justify-end items-center gap-10 pr-10"
+      >
         {navbarOptions.map((option) => {
           return (
             <Link
@@ -24,14 +27,14 @@ const Navbar = () => {
               spy={true}
               smooth={true}
               offset={50}
-              duration={800}
+              duration={1000}
             >
               {option.title}
             </Link>
           );
         })}
       </div>
-      <div className="md:hidden cursor-pointer h-14 bg-cyan-900 text-white flex justify-start items-center pl-5">
+      <div className="md:hidden cursor-pointer h-14 bg-sky-900 text-white flex justify-start items-center pl-5">
         <svg
           onClick={() => setOpen((prev) => !prev)}
           xmlns="http://www.w3.org/2000/svg"
@@ -49,12 +52,12 @@ const Navbar = () => {
         </svg>
       </div>
       {open && (
-        <div className="top-16 w-full flex md:hidden flex-col py-2 gap-2 bg-cyan-100">
+        <div className="top-16 w-full flex md:hidden flex-col py-2 gap-2 bg-sky-100">
           {navbarOptions.map((option) => {
             return (
               <Link
                 onClick={handleClick}
-                className="rounded-full cursor-pointer hover:bg-cyan-900 hover:text-white p-2 pl-5 font-normal text-cyan-900"
+                className="rounded-full cursor-pointer hover:bg-sky-900 hover:text-white p-2 pl-5 font-normal text-sky-900"
                 to={option.href}
                 spy={true}
                 smooth={true}

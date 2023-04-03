@@ -81,7 +81,7 @@ const Contact = () => {
                   type="text"
                   name="name"
                   className="border w-full placeholder-gray-400 focus:outline-none
-                  focus:border-cyan-800 p-3 mt-1 mr-0 mb-0 ml-0 text-base block bg-white
+                  focus:border-sky-800 p-3 mt-1 mr-0 mb-0 ml-0 text-base block bg-white
                   border-gray-300 rounded-md"
                 />
                 {err.nameErr && (
@@ -119,7 +119,7 @@ const Contact = () => {
                   required
                   name="email"
                   className="border w-full placeholder-gray-400 focus:outline-none
-                  focus:border-cyan-800 p-3 mt-1 mr-0 mb-0 ml-0 text-base block bg-white
+                  focus:border-sky-800 p-3 mt-1 mr-0 mb-0 ml-0 text-base block bg-white
                   border-gray-300 rounded-md"
                 />
                 {err.emailErr && (
@@ -143,7 +143,7 @@ const Contact = () => {
                   type="text"
                   name="subject"
                   className="border w-full placeholder-gray-400 focus:outline-none
-                  focus:border-cyan-800 p-3 mt-1 mr-0 mb-0 ml-0 text-base block bg-white
+                  focus:border-sky-800 p-3 mt-1 mr-0 mb-0 ml-0 text-base block bg-white
                   border-gray-300 rounded-md"
                 />
                 {err.subErr && (
@@ -167,7 +167,7 @@ const Contact = () => {
                   type="text"
                   name="message"
                   className="border w-full placeholder-gray-400 focus:outline-none
-                  focus:border-cyan-800 p-3 mt-1 mr-0 mb-0 ml-0 text-base block bg-white
+                  focus:border-sky-800 p-3 mt-1 mr-0 mb-0 ml-0 text-base block bg-white
                   border-gray-300 rounded-md"
                 />
                 {err.msgErr && (
@@ -176,7 +176,7 @@ const Contact = () => {
               </div>
               <button
                 type="submit"
-                className="rounded-full uppercase tracking-widest text-lg md:text-xl py-4 w-full bg-cyan-900 hover:bg-cyan-700 text-white"
+                className="rounded-full uppercase tracking-widest text-lg md:text-xl py-3 sm:py-4 w-full bg-sky-900 hover:bg-sky-700 text-white"
               >
                 Send Message
               </button>
@@ -196,7 +196,7 @@ const Contact = () => {
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-7 w-7 text-green-400"
+                className="h-5 w-5 sm:h-7 sm:w-7 text-green-400"
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >
@@ -211,7 +211,7 @@ const Contact = () => {
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-7 w-7"
+                className="h-5 w-5 sm:h-7 sm:w-7"
                 fill="currentColor"
                 style={{ color: "#0077b5" }}
                 viewBox="0 0 24 24"
@@ -227,7 +227,7 @@ const Contact = () => {
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-7 w-7"
+                className="h-5 w-5 sm:h-7 sm:w-7"
                 fill="currentColor"
                 style={{ color: "#333" }}
                 viewBox="0 0 24 24"
@@ -243,7 +243,7 @@ const Contact = () => {
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-7 w-7 text-pink-600"
+                className="h-5 w-5 sm:h-7 sm:w-7 text-pink-600"
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >
@@ -258,7 +258,7 @@ const Contact = () => {
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-7 w-7"
+                className="h-5 w-5 sm:h-7 sm:w-7"
                 fill="currentColor"
                 style={{ color: "#ea4335" }}
                 viewBox="0 0 24 24"
