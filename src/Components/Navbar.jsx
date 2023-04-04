@@ -1,28 +1,32 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
+import { MdLightMode, MdDarkMode } from "react-icons/md";
 
 export const navbarOptions = [
   { title: "Home", href: "home" },
   { title: "About", href: "about" },
+  { title: "Skills", href: "skills" },
   { title: "Projects", href: "projects" },
   { title: "Contact", href: "contact" },
 ];
 
-const Navbar = () => {
+const Navbar = ({toggleTheme,theme}) => {
   const [open, setOpen] = useState(false);
   const handleClick = () => setOpen(false);
 
   return (
-    <>
+    <div
+      className="h-16 items-center justify-between w-full flex border border-x-0 border-gray-900 dark:border-gray-100 dark:bg-gray-900 dark:text-gray-50 text-gray-900 bg-gray-100"
+    >
       <div
         id="navbar"
-        className="hidden w-full md:flex h-16 bg-sky-900 text-white justify-end items-center gap-10 pr-10"
+        className="hidden w-full md:flex justify-start items-center gap-10 pl-10"
       >
         {navbarOptions.map((option) => {
           return (
             <Link
               onClick={handleClick}
-              className="nav-item text-sm sm:text-md link-underline cursor-pointer link-underline-black"
+              className="nav-item text-base dark:bg-gradient-to-r bg-gradient-to-r from-gray-900 to-gray-900 dark:from-gray-100 dark:to-gray-100 link-underline cursor-pointer link-underline-black"
               to={option.href}
               spy={true}
               smooth={true}
@@ -34,7 +38,7 @@ const Navbar = () => {
           );
         })}
       </div>
-      <div className="md:hidden cursor-pointer h-14 bg-sky-900 text-white flex justify-start items-center pl-5">
+      <div className="md:hidden cursor-pointer h-14 bg-gray-900 text-white flex justify-start items-center pl-5">
         <svg
           onClick={() => setOpen((prev) => !prev)}
           xmlns="http://www.w3.org/2000/svg"
@@ -51,13 +55,20 @@ const Navbar = () => {
           />
         </svg>
       </div>
+      <div className="cursor-pointer pr-10">
+        {theme === "dark" ? (
+          <MdLightMode onClick={() => toggleTheme()} size={25} />
+        ) : (
+          <MdDarkMode onClick={() => toggleTheme()} size={25} />
+        )}
+      </div>
       {open && (
-        <div className="top-16 transition duration-300 ease-linear w-full flex md:hidden flex-col py-2 gap-2 bg-sky-100">
+        <div className="top-16 transition duration-300 ease-linear w-full flex md:hidden flex-col py-2 gap-2 bg-gray-100">
           {navbarOptions.map((option) => {
             return (
               <Link
                 onClick={handleClick}
-                className="text-sm sm:text-md rounded-full cursor-pointer hover:bg-sky-900 hover:text-white p-2 pl-5 font-normal text-sky-900"
+                className="text-sm sm:text-md rounded-full cursor-pointer hover:bg-gray-900 hover:text-white p-2 pl-5 font-normal text-gray-900"
                 to={option.href}
                 spy={true}
                 smooth={true}
@@ -70,7 +81,7 @@ const Navbar = () => {
           })}
         </div>
       )}
-    </>
+    </div>
   );
 };
 

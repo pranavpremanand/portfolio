@@ -38,29 +38,30 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="m-5 sm:m-10 p-5 sm:p-10 shadow-2xl shadow-slate-900 drop-shadow-md rounded-lg bg-gray-200 flex-wrap"
+      className="m-5 sm:m-10 p-5 sm:p-10 shadow-2xl dark:shadow-slate-400 shadow-slate-900 drop-shadow-md rounded-lg bg-gray-100 dark:bg-gray-900 flex-wrap"
     >
-      <h1 className="text-xl sm:text-2xl uppercase md:text-3xl md:mt-0 font-bold tracking-widest underline text-center mb-5">
+      <h1 className="text-xl dark:text-gray-50 sm:text-2xl uppercase md:text-3xl md:mt-0 font-bold tracking-widest underline text-center mb-5">
         Projects
       </h1>
-      <div className="flex justify-center gap-5 px-1 lg:px-10 flex-wrap">
+      {/* <div className="flex justify-center gap-5 px-1 lg:px-10 flex-wrap"> */}
+      <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-8 text-center py-8 px-12 sm:px-0">
         {projects.map((project) => {
           return (
-            <div className="w-full border rounded-md md:w-5/12 lg:w-4/12 2xl:w-2/12 mb-2">
+            <div className="w-full border rounded-md  mb-2">
               <div className="max-h-40 w-full overflow-hidden rounded-t-md">
                 <img
-                  className="object-fill w-full ease-in-out md:hover:scale-125 transition duration-700 cursor-pointer"
+                  className="object-fill w-full ease-in-out sm:hover:scale-110 transition duration-700 cursor-pointer"
                   src={project.img}
                   alt=""
                 />
                 <hr />
               </div>
-              <div className="overflow-hidden w-full h-40 px-3 pt-3 flex flex-col bg-white rounded-b-md">
+              <div className="overflow-hidden w-full md:h-36 h-40 px-3 pt-3 flex flex-col bg-white dark:bg-gray-900 rounded-b-md">
                 <div className="w-full flex justify-between items-center">
                   <h3 className="text-md md:text-lg mb-1 font-medium">
                     {project.title}
                   </h3>
-                  <a href={project.link}>
+                  <a href={project.link} target="_blank" rel="noreferrer">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -79,7 +80,7 @@ const Projects = () => {
                 </div>
                 <hr />
                 <div className="flex">
-                  <p className="text-sm lg:text-md mt-2 overflow-ellipsis overflow-hidden">
+                  <p className="text-sm lg:text-md mt-2 text-start overflow-ellipsis overflow-hidden">
                     {project.description}
                   </p>
                 </div>

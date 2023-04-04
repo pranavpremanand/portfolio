@@ -5,22 +5,48 @@ import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
 import { Toaster } from "react-hot-toast";
-import { useState } from "react";
-import { SpinnerContext } from "./Contexts/SpinnerContext";
+import { useEffect, useState } from "react";
+import { SpinnerContext } from "./Contexts/Context";
 import { motion } from "framer-motion";
 import { Spinner } from "./Components/Spinner";
 import Projects from "./Components/Projects";
+import Skills from "./Components/Skills";
+import SocialLinks from "./Components/SocialLinks";
 
 function App() {
+  const [theme, setTheme] = useState(null);
   const [spinner, setSpinner] = useState(false);
+
   const spinnerStatus = () => {
     setSpinner((prev) => !prev);
   };
+
+  useEffect(() => {
+    if (window.matchMedia("(prefers-color-scheme:dark)").matches) {
+      setTheme("dark");
+    } else {
+      setTheme("light");
+    }
+  }, []);
+
+  useEffect(() => {
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [theme]);
+
+  //Change theme
+  const toggleTheme = () => {
+    setTheme(theme === "dark" ? "light" : "dark");
+  };
+
   return (
-    <div className="App bg-sky-100">
-      <SpinnerContext.Provider
-        value={{ spinner: spinnerStatus, setSpinner: spinnerStatus }}
-      >
+    <SpinnerContext.Provider
+      value={{ spinner: spinnerStatus, setSpinner: spinnerStatus }}
+    >
+      <div className="dark:bg-gray-900 dark:text-gray-50 text-gray-900 bg-gray-100">
         <Toaster position="top-center" reverseOrder={false} />
         {spinner && <Spinner />}
         <motion.div
@@ -29,16 +55,20 @@ function App() {
           className="parts"
         >
           <div style={{ position: "fixed", width: "100%", zIndex: "1000" }}>
-            <Navbar />
+            <Navbar toggleTheme={toggleTheme} theme={theme} />
           </div>
           <Banner />
-          <About />
-          <Projects />
-          <Contact />
+          <div className="lg:px-6">
+            <About />
+            <Skills theme={theme} />
+            <Projects />
+            <Contact theme={theme} />
+          </div>
           <Footer />
+          <SocialLinks />
         </motion.div>
-      </SpinnerContext.Provider>
-    </div>
+      </div>
+    </SpinnerContext.Provider>
   );
 }
 

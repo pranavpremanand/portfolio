@@ -34,7 +34,7 @@ const Banner = () => {
         />
       </div>
       {/* <div className="absolute gap-6 flex w-40 justify-center text-white bottom-14">
-        <button className="hover:bg-sky-600 outline outline-1 outline-sky-600 bg-sky-800 transition ease-in-out duration-300 w-40 justify-center text-md font-medium flex items-center gap-1 py-2 px-2 rounded-sm">
+        <button className="hover:bg-gray-600 outline outline-1 outline-gray-600 bg-gray-800 transition ease-in-out duration-300 w-40 justify-center text-md font-medium flex items-center gap-1 py-2 px-2 rounded-sm">
           <a
             className="flex items-center gap-1"
             href={Resume}
@@ -54,7 +54,7 @@ const Banner = () => {
             </svg>{" "}
           </a>
         </button>
-        <div className="hover:bg-sky-600 outline outline-1 outline-sky-600 bg-sky-800 transition ease-in-out duration-300 w-40 justify-center text-md font-medium flex items-center gap-1 py-2 px-2 rounded-sm">Contact</div>
+        <div className="hover:bg-gray-600 outline outline-1 outline-gray-600 bg-gray-800 transition ease-in-out duration-300 w-40 justify-center text-md font-medium flex items-center gap-1 py-2 px-2 rounded-sm">Contact</div>
       </div> */}
     </div>
   );
