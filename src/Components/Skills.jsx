@@ -116,17 +116,17 @@ const Skills = ({ theme }) => {
         id="skills"
         className="m-5 sm:m-10 p-5 sm:p-10 shadow-2xl shadow-slate-900 drop-shadow-md rounded-lg bg-gray-50 dark:bg-gray-900 dark:shadow-slate-400 flex-wrap"
       >
-        <h1 className="text-xl sm:text-2xl md:text-3xl text-center font-bold uppercase tracking-widest underline mb-5">
+        <h1 className="text-2xl md:text-3xl text-center font-bold uppercase tracking-widest underline md-2 md:mb-5">
           Specialized Skills
         </h1>
-        <div className="w-full grid grid-cols-1 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
+        <div className="w-full grid grid-cols-3 lg:grid-cols-5 gap-8 text-center py-8 sm:px-0">
           {skills.map(({ id, src, title, style }) => (
             <div
               key={id}
               className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
             >
               <img src={src} alt="" className="w-16 sm:w-20 mx-auto" />
-              <p className="mt-2 text-sm sm:text-base cursor-default font-medium">
+              <p className="mt-2 hidden sm:inline text-sm overflow-hidden sm:text-base cursor-default font-medium">
                 {title}
               </p>
             </div>

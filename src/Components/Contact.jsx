@@ -59,7 +59,7 @@ const Contact = ({theme}) => {
     >
       <div className="w-full sm:w-5/12">
         <div className="">
-          <h5 className="text-xl sm:text-2xl text-center md:text-3xl tracking-wider font-medium underline sm:text-start">
+          <h5 className="text-2xl text-center md:text-3xl tracking-wider font-medium underline sm:text-start">
             Send Message
           </h5>
           <div className="mt-6">
@@ -185,7 +185,7 @@ const Contact = ({theme}) => {
         </div>
       </div>
       <div className="w-full my-10 sm:my-0 sm:w-5/12">
-        <h5 className="text-xl sm:text-2xl text-center tracking-wider md:text-3xl font-medium underline sm:text-start">
+        <h5 className="text-2xl text-center tracking-wider md:text-3xl font-medium underline sm:text-start">
           Get in Touch
         </h5>
         <div className="mt-6 flex flex-col gap-4">

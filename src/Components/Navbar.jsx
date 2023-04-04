@@ -15,6 +15,7 @@ const Navbar = ({toggleTheme,theme}) => {
   const handleClick = () => setOpen(false);
 
   return (
+    <>
     <div
       className="h-16 items-center justify-between w-full flex border border-x-0 border-gray-900 dark:border-gray-100 dark:bg-gray-900 dark:text-gray-50 text-gray-900 bg-gray-100"
     >
@@ -38,7 +39,7 @@ const Navbar = ({toggleTheme,theme}) => {
           );
         })}
       </div>
-      <div className="md:hidden cursor-pointer h-14 bg-gray-900 text-white flex justify-start items-center pl-5">
+      <div className="md:hidden cursor-pointer h-14 dark:bg-gray-900 bg-gray-100 text-gray-900 dark:text-white flex justify-start items-center pl-5">
         <svg
           onClick={() => setOpen((prev) => !prev)}
           xmlns="http://www.w3.org/2000/svg"
@@ -62,13 +63,14 @@ const Navbar = ({toggleTheme,theme}) => {
           <MdDarkMode onClick={() => toggleTheme()} size={25} />
         )}
       </div>
+    </div>
       {open && (
-        <div className="top-16 transition duration-300 ease-linear w-full flex md:hidden flex-col py-2 gap-2 bg-gray-100">
+        <div className="top-16 transition duration-300 ease-linear w-full flex md:hidden flex-col py-2 gap-2 bg-gray-300 dark:bg-gray-900 dark:border-gray-100 border border-t-0">
           {navbarOptions.map((option) => {
             return (
               <Link
                 onClick={handleClick}
-                className="text-sm sm:text-md rounded-full cursor-pointer hover:bg-gray-900 hover:text-white p-2 pl-5 font-normal text-gray-900"
+                className="text-sm sm:text-md rounded-full cursor-pointer hover:bg-gray-900 dark:hover:bg-gray-100 hover:text-white dark:hover:text-gray-900 p-2 pl-5 font-normal text-gray-900 dark:text-gray-100"
                 to={option.href}
                 spy={true}
                 smooth={true}
@@ -81,7 +83,7 @@ const Navbar = ({toggleTheme,theme}) => {
           })}
         </div>
       )}
-    </div>
+    </>
   );
 };
 

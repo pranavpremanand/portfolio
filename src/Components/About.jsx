@@ -8,7 +8,7 @@ const About = () => {
       id="about"
       className="m-5 sm:m-10 p-5 sm:p-10 shadow-2xl drop-shadow-md rounded-lg flex-wrap dark:shadow-slate-400 dark:bg-gray-900 shadow-slate-900 bg-gray-50"
     >
-      <h1 className="text-xl uppercase sm:text-2xl md:text-3xl md:mt-0 font-bold tracking-widest underline text-center mb-2 sm:mb-5">
+      <h1 className="uppercase text-2xl md:text-3xl md:mt-0 font-bold tracking-widest underline text-center mb-2 md-2 md:mb-5">
         about me
       </h1>
       <div className="flex flex-wrap gap-5 md:gap-10 justify-start">

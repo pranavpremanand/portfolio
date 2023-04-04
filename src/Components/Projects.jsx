@@ -40,14 +40,13 @@ const Projects = () => {
       id="projects"
       className="m-5 sm:m-10 p-5 sm:p-10 shadow-2xl dark:shadow-slate-400 shadow-slate-900 drop-shadow-md rounded-lg bg-gray-100 dark:bg-gray-900 flex-wrap"
     >
-      <h1 className="text-xl dark:text-gray-50 sm:text-2xl uppercase md:text-3xl md:mt-0 font-bold tracking-widest underline text-center mb-5">
+      <h1 className="dark:text-gray-50 text-2xl uppercase md:text-3xl md:mt-0 font-bold tracking-widest underline text-center md-2 md:mb-5">
         Projects
       </h1>
-      {/* <div className="flex justify-center gap-5 px-1 lg:px-10 flex-wrap"> */}
-      <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-8 text-center py-8 px-12 sm:px-0">
+      <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-8 text-center py-8 sm:px-0">
         {projects.map((project) => {
           return (
-            <div className="w-full border rounded-md  mb-2">
+            <div className="w-full border rounded-md mb-2">
               <div className="max-h-40 w-full overflow-hidden rounded-t-md">
                 <img
                   className="object-fill w-full ease-in-out sm:hover:scale-110 transition duration-700 cursor-pointer"
