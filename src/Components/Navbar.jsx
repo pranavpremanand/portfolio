@@ -21,7 +21,7 @@ const Navbar = ({toggleTheme,theme}) => {
     >
       <div
         id="navbar"
-        className="hidden w-full md:flex justify-start items-center gap-10 pl-10"
+        className="hidden w-full md:flex justify-start items-center gap-10 ml-10"
       >
         {navbarOptions.map((option) => {
           return (
@@ -39,7 +39,7 @@ const Navbar = ({toggleTheme,theme}) => {
           );
         })}
       </div>
-      <div className="md:hidden cursor-pointer h-14 dark:bg-gray-900 bg-gray-100 text-gray-900 dark:text-white flex justify-start items-center pl-5">
+      <div className="md:hidden cursor-pointer h-14 dark:bg-gray-900 bg-gray-100 text-gray-900 dark:text-white flex justify-start items-center ml-5">
         <svg
           onClick={() => setOpen((prev) => !prev)}
           xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +56,7 @@ const Navbar = ({toggleTheme,theme}) => {
           />
         </svg>
       </div>
-      <div className="cursor-pointer pr-10">
+      <div className="cursor-pointer mr-10">
         {theme === "dark" ? (
           <MdLightMode onClick={() => toggleTheme()} size={25} />
         ) : (
@@ -65,12 +65,12 @@ const Navbar = ({toggleTheme,theme}) => {
       </div>
     </div>
       {open && (
-        <div className="transition top-16 duration-300 ease-in-out w-full flex md:hidden flex-col py-2 gap-2 bg-gray-300 dark:bg-gray-900 dark:border-gray-100 border border-t-0">
+        <div className="transition top-16 duration-300 ease-in-out w-full flex md:hidden flex-col py-2 gap-2 bg-gray-300 dark:bg-gray-800 dark:border-gray-100 border rounded-b-lg border-t-0">
           {navbarOptions.map((option) => {
             return (
               <Link
                 onClick={handleClick}
-                className="text-sm sm:text-md rounded-full cursor-pointer hover:bg-gray-900 dark:hover:bg-gray-100 hover:text-white dark:hover:text-gray-900 p-2 pl-5 font-normal text-gray-900 dark:text-gray-100"
+                className="text-sm sm:text-md rounded-full cursor-pointer hover:bg-gray-900 dark:hover:bg-gray-100 hover:text-white dark:hover:text-gray-900 p-2 ml-5 font-normal text-gray-900 dark:text-gray-100"
                 to={option.href}
                 spy={true}
                 smooth={true}
