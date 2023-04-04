@@ -65,7 +65,7 @@ const Navbar = ({toggleTheme,theme}) => {
       </div>
     </div>
       {open && (
-        <div className="top-16 transition duration-300 ease-linear w-full flex md:hidden flex-col py-2 gap-2 bg-gray-300 dark:bg-gray-900 dark:border-gray-100 border border-t-0">
+        <div className="transition top-16 duration-300 ease-in-out w-full flex md:hidden flex-col py-2 gap-2 bg-gray-300 dark:bg-gray-900 dark:border-gray-100 border border-t-0">
           {navbarOptions.map((option) => {
             return (
               <Link

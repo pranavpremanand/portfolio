@@ -14,7 +14,7 @@ const About = () => {
       <div className="flex flex-wrap gap-5 md:gap-10 justify-start">
         <img
           src={Profile}
-          className="self-center lg:self-start object-fill w-full sm:w-1/2 md:w-5/12 max-w-xs mt-2 sm:mt-4 rounded-md lg:mt-0"
+          className="shadow-lg dark:shadow-none dark:drop-shadow-sm drop-shadow-md shadow-slate-700 dark:shadow-slate-400 self-center lg:self-start object-fill w-full sm:w-1/2 md:w-5/12 max-w-xs mt-2 sm:mt-4 rounded-md lg:mt-0"
           alt=""
         />
         <div className="flex flex-col gap-2 mt-3 w-full md:w-7/12 justify-start">
