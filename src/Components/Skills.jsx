@@ -127,7 +127,7 @@ const Skills = ({ theme }) => {
               className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
             >
               <img src={src} alt="" className="w-16 sm:w-20 mx-auto" />
-              <p className="mt-2 hidden sm:inline text-sm overflow-hidden sm:text-base cursor-default font-medium">
+              <p className="mt-2 text-xs overflow-hidden sm:text-base cursor-default font-medium">
                 {title}
               </p>
             </div>
