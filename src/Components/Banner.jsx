@@ -1,13 +1,13 @@
 import React from "react";
 import BannerImg from "../Imgs/Banner.jpg";
 import { TypeAnimation } from "react-type-animation";
-import Resume from "../Files/Pranav.M-Resume.pdf";
+// import Resume from "../Files/Pranav.M-Resume.pdf";
 
 const Banner = () => {
   return (
     <div
       id="home"
-      className="relative banner flex justify-center h-96 sm:h-screen"
+      className="relative before:bg-slate-900/25 dark:before:bg-slate-900/50 banner flex justify-center h-96 sm:h-screen"
       style={{
         backgroundImage: `url(${BannerImg})`,
         backgroundPosition: "80% 10%",

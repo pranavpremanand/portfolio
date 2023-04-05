@@ -9,6 +9,7 @@ import tailwind from "../Imgs/tailwind.png";
 import mongodb from "../Imgs/mongodb.png";
 import bootstrap from "../Imgs/bootstrap.png";
 import express from "../Imgs/expressjs.png";
+import expressWhite from "../Imgs/expressjs-white.png";
 import mui from "../Imgs/MUI.png";
 import redux from "../Imgs/redux.png";
 import postgresql from "../Imgs/postgresql.png";
@@ -44,7 +45,7 @@ const Skills = ({ theme }) => {
     },
     {
       id: 5,
-      src: express,
+      src: theme === "dark" ? expressWhite : express,
       title: "Express.js",
       style: "shadow-gray-500",
     },
