@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="m-5 sm:m-10 p-5 sm:p-10 shadow-2xl drop-shadow-md rounded-lg flex-wrap dark:shadow-slate-400 dark:bg-gray-900 shadow-slate-900 bg-gray-50"
+      className="m-5 sm:m-10 p-5 sm:p-10 shadow-lg drop-shadow-md rounded-lg flex-wrap dark:shadow-slate-700 dark:bg-gray-900 shadow-slate-300 bg-gray-50"
     >
       <h1 className="uppercase text-2xl md:text-3xl md:mt-0 font-bold tracking-widest underline text-center mb-2 md-2 md:mb-5">
         about me
@@ -14,7 +14,7 @@ const About = () => {
       <div className="flex flex-wrap gap-5 md:gap-10 justify-start">
         <img
           src={Profile}
-          className="shadow-lg dark:shadow-none dark:drop-shadow-sm drop-shadow-md shadow-slate-700 dark:shadow-slate-400 self-center lg:self-start object-fill w-full sm:w-1/2 md:w-5/12 max-w-xs mt-2 sm:mt-4 rounded-md lg:mt-0"
+          className="shadow-md dark:shadow-none dark:drop-shadow-sm drop-shadow-md shadow-slate-400 self-center lg:self-start object-fill w-full sm:w-1/2 md:w-5/12 max-w-xs mt-2 sm:mt-4 rounded-md lg:mt-0"
           alt=""
         />
         <div className="flex flex-col gap-2 mt-3 w-full md:w-7/12 justify-start">
@@ -60,7 +60,7 @@ const About = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                   fill="currentColor"
-                  className="w-5 h-5 text-gray-900"
+                  className="w-5 h-5 text-gray-900 dark:text-white"
                 >
                   <path
                     fill-rule="evenodd"

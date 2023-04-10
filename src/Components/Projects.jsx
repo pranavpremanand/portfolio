@@ -38,7 +38,7 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="m-5 sm:m-10 p-5 sm:p-10 shadow-2xl dark:shadow-slate-400 shadow-slate-900 drop-shadow-md rounded-lg bg-gray-100 dark:bg-gray-900 flex-wrap"
+      className="m-5 sm:m-10 p-5 sm:p-10 shadow-lg dark:shadow-slate-700 shadow-slate-300 drop-shadow-md rounded-lg bg-gray-100 dark:bg-gray-900 flex-wrap"
     >
       <h1 className="dark:text-gray-50 text-2xl uppercase md:text-3xl md:mt-0 font-bold tracking-widest underline text-center md-2 md:mb-5">
         Projects

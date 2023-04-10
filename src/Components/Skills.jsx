@@ -115,7 +115,7 @@ const Skills = ({ theme }) => {
     <>
       <div
         id="skills"
-        className="m-5 sm:m-10 p-5 sm:p-10 shadow-2xl shadow-slate-900 drop-shadow-md rounded-lg bg-gray-50 dark:bg-gray-900 dark:shadow-slate-400 flex-wrap"
+        className="m-5 sm:m-10 p-5 sm:p-10 shadow-lg shadow-slate-300 drop-shadow-md rounded-lg bg-gray-50 dark:bg-gray-900 dark:shadow-slate-700 flex-wrap"
       >
         <h1 className="text-2xl md:text-3xl text-center font-bold uppercase tracking-widest underline md-2 md:mb-5">
           Specialized Skills

@@ -55,7 +55,7 @@ const Contact = ({ theme }) => {
   return (
     <div
       id="contact"
-      className="md:mt-0 m-5 flex sm:m-10 sm:p-10 shadow-2xl dark:shadow-slate-400 justify-around shadow-slate-900 drop-shadow-md rounded-lg bg-gray-100 dark:bg-gray-900 flex-wrap p-5 md:p-10 md:m-10"
+      className="md:mt-0 m-5 flex sm:m-10 sm:p-10 shadow-lg dark:shadow-slate-700 justify-around shadow-slate-300 drop-shadow-md rounded-lg bg-gray-100 dark:bg-gray-900 flex-wrap p-5 md:p-10 md:m-10"
     >
       <div className="w-full sm:w-5/12">
         <div className="">
@@ -65,23 +65,13 @@ const Contact = ({ theme }) => {
           <div className="mt-6">
             <form ref={form} id="form" onSubmit={handleSubmit}>
               <div className="w-full mb-5">
-                <p className="bg-gray-100 dark:bg-gray-900 pt-0 pr-2 pb-0 pl-2 -mt-3 mr-0 mb-0 ml-2 text-md font-medium absolute">
+                <p className="bg-gray-100 dark:bg-gray-900 pt-0 pr-2 pb-0 pl-2 -mt-2 sm:-mt-3 mr-0 mb-0 ml-2 text-sm sm:text-md font-medium absolute">
                   Your name
                 </p>
                 <input
                   onChange={(e) => {
                     const nameReg =
                       /^[^-\s][a-zA-Z0-9_\s-]+$/;
-                    // if (e.target.value.length <= 2) {
-                    //   setErr({ ...err, nameErr: "Enter a valid name" });
-                    // } else {
-                    //   if (nameReg.test(e.target.value)) {
-                    //     setFormdata({ ...formData, name: e.target.value });
-                    //     setErr({ ...err, nameErr: "" });
-                    //   } else {
-                    //     setErr({ ...err, nameErr: "Enter a valid name" });
-                    //   }
-                    // }
                     if(e.target.value.length>1){
                       if(!nameReg.test(e.target.value)){
                         setErr({ ...err, nameErr: "Enter a valid name" })
@@ -105,7 +95,7 @@ const Contact = ({ theme }) => {
                 )}
               </div>
               <div className="w-full mb-5">
-                <p className="bg-gray-100 dark:bg-gray-900 pt-0 pr-2 pb-0 pl-2 -mt-3 mr-0 mb-0 ml-2 text-md font-medium absolute">
+                <p className="bg-gray-100 dark:bg-gray-900 pt-0 pr-2 pb-0 pl-2 -mt-2 sm:-mt-3 mr-0 mb-0 ml-2 text-sm sm:text-md font-medium absolute">
                   Your email
                 </p>
                 <input
@@ -144,7 +134,7 @@ const Contact = ({ theme }) => {
                 )}
               </div>
               <div className="w-full mb-5">
-                <p className="bg-gray-100 dark:bg-gray-900 pt-0 pr-2 pb-0 pl-2 -mt-3 mr-0 mb-0 ml-2 text-md font-medium absolute">
+                <p className="bg-gray-100 dark:bg-gray-900 pt-0 pr-2 pb-0 pl-2 -mt-2 sm:-mt-3 mr-0 mb-0 ml-2 text-sm sm:text-md font-medium absolute">
                   Subject
                 </p>
                 <input
@@ -172,7 +162,7 @@ const Contact = ({ theme }) => {
                 )}
               </div>
               <div className="w-full mb-5">
-                <p className="bg-gray-100 dark:bg-gray-900 pt-0 pr-2 pb-0 pl-2 -mt-3 mr-0 mb-0 ml-2 text-md font-medium absolute">
+                <p className="bg-gray-100 dark:bg-gray-900 pt-0 pr-2 pb-0 pl-2 -mt-2 sm:-mt-3 mr-0 mb-0 ml-2 text-sm sm:text-md font-medium absolute">
                   Message
                 </p>
                 <textarea
@@ -210,7 +200,7 @@ const Contact = ({ theme }) => {
           Get in Touch
         </h5>
         <div className="mt-6 flex flex-col gap-4">
-          <div className="hidden text-sm sm:text-md sm:flex gap-3 items-center">
+          <div className="hidden text-sm sm:text-lg sm:flex gap-3 items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -227,7 +217,7 @@ const Contact = ({ theme }) => {
             </svg>
             +91 9633063113
           </div>
-          <div className="hidden text-sm sm:text-md sm:flex gap-3 items-center">
+          <div className="hidden text-sm sm:text-lg sm:flex gap-3 items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

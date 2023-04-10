@@ -7,7 +7,7 @@ const Banner = () => {
   return (
     <div
       id="home"
-      className="relative before:bg-slate-900/25 dark:before:bg-slate-900/50 banner flex justify-center h-96 sm:h-screen"
+      className="relative shadow-lg dark:shadow-slate-700 shadow-slate-400 before:bg-neutral-700/25 dark:before:bg-gray-900/25 banner flex justify-center h-96 sm:h-screen"
       style={{
         backgroundImage: `url(${BannerImg})`,
         backgroundPosition: "80% 10%",
@@ -18,11 +18,11 @@ const Banner = () => {
         <TypeAnimation
           sequence={[
             "Software Developer",
-            3000,
+            4000,
             "MERN Stack",
-            3000,
+            4000,
             "Freelancer",
-            3000,
+            4000,
             // () => {
             //    console.log('Sequence completed');
             // },
@@ -30,7 +30,7 @@ const Banner = () => {
           wrapper="span"
           cursor={true}
           repeat={Infinity}
-          className="blackbackground p-3 text-3xl sm:text-4xl font-medium inline-block"
+          className="text-3xl sm:text-4xl font-medium inline-block"
         />
       </div>
       {/* <div className="absolute gap-6 flex w-40 justify-center text-white bottom-14">
