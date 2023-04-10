@@ -43,7 +43,7 @@ const Projects = () => {
       <h1 className="dark:text-gray-50 text-2xl uppercase md:text-3xl md:mt-0 font-bold tracking-widest underline text-center md-2 md:mb-5">
         Projects
       </h1>
-      <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-8 text-center py-8 sm:px-0">
+      <div className="w-full grid grid-cols-1 sm:grid-cols-2 2xl:grid-cols-4 gap-8 text-center py-8 sm:px-0">
         {projects.map((project) => {
           return (
             <div className="w-full border rounded-md mb-2">
