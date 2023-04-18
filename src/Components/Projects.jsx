@@ -3,8 +3,15 @@ import Img1 from "../Imgs/applyjobssite.png";
 import Img2 from "../Imgs/footballersapp.png";
 import Img4 from "../Imgs/dashboard.png";
 import Img3 from "../Imgs/travels.png";
+import Img5 from "../Imgs/elearning.png";
 
 export const projects = [
+  {
+    title: "e-Learning App",
+    img: Img5,
+    link: "https://udemylearning.netlify.app/",
+    description: "Website for e-learning courses.",
+  },
   {
     title: "Job Applying Website",
     img: Img1,
@@ -16,14 +23,14 @@ export const projects = [
     img: Img2,
     link: "https://footballersapp.netlify.app",
     description:
-      "You can search any football player's information here and create your Best 11 team.",
+      "You can search any footballer's information in this website.",
   },
   {
     title: "Travels Website",
     img: Img3,
     link: "https://travelandtourismagency.netlify.app",
     description:
-      "It's a website clone of Go Lakshadweep. All 3 pages designed are complete responsive.",
+      "It's a travels company website. All 3 pages designed are complete responsive.",
   },
   {
     title: "Admin Dashboard",
@@ -41,7 +48,7 @@ const Projects = () => {
       className="m-5 sm:m-10 p-5 sm:p-10 shadow-lg dark:shadow-slate-700 shadow-slate-300 drop-shadow-md rounded-lg bg-gray-100 dark:bg-gray-900 flex-wrap"
     >
       <h1 className="dark:text-gray-50 text-2xl uppercase md:text-3xl md:mt-0 font-bold tracking-widest underline text-center md-2 md:mb-5">
-        Projects
+        Recent Projects
       </h1>
       <div className="w-full grid grid-cols-1 sm:grid-cols-2 2xl:grid-cols-4 gap-8 text-center py-8 sm:px-0">
         {projects.map((project) => {
