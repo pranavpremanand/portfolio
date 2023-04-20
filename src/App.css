@@ -16,7 +16,7 @@
   background-position: 0 100%;
 }
 
-.nav-item .active{
+.nav-item .active {
   background-size: 100% 2px;
   background-position: 0 100%;
 }
@@ -73,4 +73,14 @@ span {
   z-index: 9999;
   width: 100%;
   height: 100%;
+}
+
+.parent:hover .child {
+  bottom: 10%;
+}
+.parent:hover .img {
+  opacity: 20%;
+}
+.child {
+  bottom: -100%;
 }

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { AiOutlineCloudDownload } from "react-icons/ai";
 import Profile from "../Imgs/Profile.jpg";
 import Resume from "../Files/Pranav.M-Resume.pdf";
 
@@ -47,29 +47,16 @@ const About = () => {
             </div>
           </div>
           <div className="flex flex-wrap gap-2 text-md md:text-lg font-medium items-center">
-            <div className="hidden sm:inline">Resume</div>
-            <div className="flex">
-              <div className="hidden sm:inline">: &nbsp;</div>
+            <button className="mt-4 rounded-full p-[0.9px] hover:border-slate-900 border-transparent border">
               <a
-                className="underline flex items-center gap-1 text-blue-700 dark:text-blue-500 text-sm sm:text-md md:text-lg"
                 href={Resume}
                 download="Pranav M - Resume"
+                className="tracking-widest rounded-full flex border dark:border-white border-slate-900 hover:dark:bg-slate-900 hover:dark:text-white border-transparent hover:border-slate-900 hover:bg-white hover:text-slate-900 items-center gap-2 bg-slate-900 text-white dark:bg-white dark:text-slate-900 py-1 px-4 text-sm font-semibold uppercase"
               >
-                Download resume
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  className="w-5 h-5 text-gray-900 dark:text-white"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M2 4.75C2 3.784 2.784 3 3.75 3h4.836c.464 0 .909.184 1.237.513l1.414 1.414a.25.25 0 00.177.073h4.836c.966 0 1.75.784 1.75 1.75v8.5A1.75 1.75 0 0116.25 17H3.75A1.75 1.75 0 012 15.25V4.75zm8.75 4a.75.75 0 00-1.5 0v2.546l-.943-1.048a.75.75 0 10-1.114 1.004l2.25 2.5a.75.75 0 001.114 0l2.25-2.5a.75.75 0 10-1.114-1.004l-.943 1.048V8.75z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
+                Resume
+                <AiOutlineCloudDownload className="animate-bounce" size={25} />
               </a>
-            </div>
+            </button>
           </div>
         </div>
       </div>

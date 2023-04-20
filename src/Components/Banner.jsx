@@ -7,7 +7,7 @@ const Banner = () => {
   return (
     <div
       id="home"
-      className="relative shadow-lg dark:shadow-slate-700 shadow-slate-400 before:bg-neutral-700/25 dark:before:bg-gray-900/25 banner flex justify-center h-96 sm:h-screen"
+      className="relative before:bg-neutral-700/25 dark:before:bg-gray-900/25 banner flex justify-center h-96 sm:h-screen"
       style={{
         backgroundImage: `url(${BannerImg})`,
         backgroundPosition: "80% 10%",

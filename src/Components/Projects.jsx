@@ -4,6 +4,8 @@ import Img2 from "../Imgs/footballersapp.png";
 import Img4 from "../Imgs/dashboard.png";
 import Img3 from "../Imgs/travels.png";
 import Img5 from "../Imgs/elearning.png";
+import { AiOutlineLink } from "react-icons/ai";
+import { Tooltip } from 'react-tooltip'
 
 export const projects = [
   {
@@ -13,7 +15,7 @@ export const projects = [
     description: "Website for e-learning courses.",
   },
   {
-    title: "Job Applying Website",
+    title: "Job Portal",
     img: Img1,
     link: "https://applyjobs.netlify.app",
     description: "A website where you can apply for different job positions.",
@@ -22,8 +24,7 @@ export const projects = [
     title: "Footballers App",
     img: Img2,
     link: "https://footballersapp.netlify.app",
-    description:
-      "You can search any footballer's information in this website.",
+    description: "You can search any footballer's information in this website.",
   },
   {
     title: "Travels Website",
@@ -53,17 +54,26 @@ const Projects = () => {
       <div className="w-full grid grid-cols-1 sm:grid-cols-2 2xl:grid-cols-4 gap-8 text-center py-8 sm:px-0">
         {projects.map((project) => {
           return (
-            <div className="w-full border rounded-md mb-2">
-              <div className="max-h-40 w-full overflow-hidden rounded-t-md">
+            <div className="parent relative h-60 rounded-md mb-2 overflow-hidden">
+              <div className="img h-full hover:opacity-20 transition ease-in-out duration-700 absolute top-0 left-0 w-full overflow-hidden rounded-t-md">
                 <img
-                  className="object-fill w-full ease-in-out sm:hover:scale-110 transition duration-700 cursor-pointer"
+                  className="max-h-60 w-full h-full object-cover ease-in-out sm:hover:scale-110 transition duration-700 cursor-pointer"
                   src={project.img}
                   alt=""
                 />
-                <hr />
               </div>
-              <div className="overflow-hidden w-full md:h-36 h-40 px-3 pt-3 flex flex-col bg-white dark:bg-gray-900 rounded-b-md">
-                <div className="w-full flex justify-between items-center">
+              <div className="child gap-2 absolute duration-700 overflow-hidden w-full md:h-36 h-40 px-3 pt-3 flex flex-col rounded-b-md">
+                <div className="flex underline underline-offset-4 flex-col text-xl md:text-2xl font-semibold">
+                  {project.title}
+                </div>
+                <p className="self-center text-sm lg:text-md text-start overflow-ellipsis overflow-hidden">
+                  {project.description}
+                </p>
+                <a data-tooltip-id="link" data-tooltip-content="Live link" className="flex hover:text-sky-400 hover:underline items-center gap-1 self-center" href={project.link} target="_blank" rel="noreferrer">
+                  <AiOutlineLink className="font-semibold" size={25} />
+                <Tooltip id="link" className="text-md"/>
+                </a>
+                {/* <div className="w-full flex justify-between items-center">
                   <h3 className="text-md md:text-lg mb-1 font-medium">
                     {project.title}
                   </h3>
@@ -83,13 +93,13 @@ const Projects = () => {
                       />
                     </svg>
                   </a>
-                </div>
-                <hr />
+                </div> */}
+                {/* <hr />
                 <div className="flex">
                   <p className="text-sm lg:text-md mt-2 text-start overflow-ellipsis overflow-hidden">
                     {project.description}
                   </p>
-                </div>
+                </div> */}
               </div>
             </div>
           );

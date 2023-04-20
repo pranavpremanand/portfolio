@@ -11,11 +11,13 @@ import bootstrap from "../Imgs/bootstrap.png";
 import express from "../Imgs/expressjs.png";
 import expressWhite from "../Imgs/expressjs-white.png";
 import mui from "../Imgs/MUI.png";
+import nextjs from "../Imgs/nextjs.png";
 import redux from "../Imgs/redux.png";
 import postgresql from "../Imgs/postgresql.png";
 import jwt from "../Imgs/jwt.png";
 import npm from "../Imgs/npm.png";
 import githubDark from "../Imgs/github-dark.png";
+import typescript from "../Imgs/typescript.png";
 
 const Skills = ({ theme }) => {
   const skills = [
@@ -37,6 +39,18 @@ const Skills = ({ theme }) => {
       title: "Redux Toolkit",
       style: "shadow-purple-600",
     },
+    // {
+    //   id: 17,
+    //   src: nextjs,
+    //   title: "Next.js",
+    //   style: "shadow-slate-400",
+    // },
+    // {
+    //   id: 16,
+    //   src: typescript,
+    //   title: "TypeScript",
+    //   style: "shadow-blue-400",
+    // },
     {
       id: 4,
       src: node,
@@ -93,15 +107,15 @@ const Skills = ({ theme }) => {
       style: "shadow-red-600",
     },
     {
-      id: 13,
-      src: postgresql,
-      title: "PostgreSQL",
-      style: "shadow-blue-400",
-    },
-    {
       id: 14,
       src: jwt,
       title: "JSON Web Token",
+      style: "shadow-blue-400",
+    },
+    {
+      id: 13,
+      src: postgresql,
+      title: "PostgreSQL",
       style: "shadow-blue-400",
     },
     {
@@ -124,7 +138,7 @@ const Skills = ({ theme }) => {
           {skills.map(({ id, src, title, style }) => (
             <div
               key={id}
-              className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
+              className={`shadow-md hover:scale-110 cursor-pointer duration-500 py-2 rounded-lg ${style}`}
             >
               <img src={src} alt="" className="w-16 sm:w-20 mx-auto" />
               <p className="mt-2 text-xs overflow-hidden sm:text-base cursor-default font-medium">

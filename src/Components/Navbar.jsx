@@ -16,7 +16,7 @@ const Navbar = ({ toggleTheme, theme }) => {
 
   return (
     <>
-      <div className="h-16 items-center justify-between w-full flex dark:bg-gray-900 dark:text-gray-50 text-gray-900 bg-gray-100 shadow-md pb-2 dark:shadow-slate-700">
+      <div className="h-16 items-center justify-between w-full flex dark:bg-gray-900 dark:text-gray-50 text-gray-900 bg-gray-100">
         <div
           id="navbar"
           className="hidden w-full md:flex justify-start items-center gap-10 ml-10"
