@@ -66,7 +66,7 @@ const Projects = () => {
                 <div className="flex underline underline-offset-4 flex-col text-xl md:text-2xl font-semibold">
                   {project.title}
                 </div>
-                <p className="self-center text-sm lg:text-md text-start overflow-ellipsis overflow-hidden">
+                <p className="self-center text-md text-start overflow-ellipsis overflow-hidden">
                   {project.description}
                 </p>
                 <a data-tooltip-id="link" data-tooltip-content="Live link" className="flex hover:text-sky-400 hover:underline items-center gap-1 self-center" href={project.link} target="_blank" rel="noreferrer">
