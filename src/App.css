@@ -84,3 +84,7 @@ span {
 .child {
   bottom: -100%;
 }
+
+.button:hover div {
+  display: none;
+}

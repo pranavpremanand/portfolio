@@ -47,14 +47,14 @@ const About = () => {
             </div>
           </div>
           <div className="flex flex-wrap gap-2 text-md md:text-lg font-medium items-center">
-            <button className="mt-4 rounded-full p-[0.9px] hover:border-slate-900 border-transparent border">
+            <button className="button mt-4 rounded-full">
               <a
                 href={Resume}
                 download="Pranav M - Resume"
-                className="tracking-widest rounded-full flex border dark:border-white border-slate-900 hover:dark:bg-slate-900 hover:dark:text-white border-transparent hover:border-slate-900 hover:bg-white hover:text-slate-900 items-center gap-2 bg-slate-900 text-white dark:bg-white dark:text-slate-900 py-1 px-4 text-sm font-semibold uppercase"
+                className="w-32 h-9 transition-all duration-300 ease-in-out font-semibold justify-center tracking-widest rounded-full flex border dark:border-white border-slate-900 border-transparent items-center gap-2 bg-slate-900 text-white dark:bg-white dark:text-slate-900 text-sm uppercase"
               >
-                Resume
-                <AiOutlineCloudDownload className="animate-bounce" size={25} />
+               <div>Resume</div>
+                <AiOutlineCloudDownload className="animate-bounce translate-x-36 transition-all ease-in-out duration-300" size={25} />
               </a>
             </button>
           </div>
