@@ -76,7 +76,8 @@ span {
 }
 
 .parent:hover .child {
-  bottom: 10%;
+  bottom: 15%;
+  transform: translate(0%);
 }
 .parent:hover .img {
   opacity: 20%;

@@ -62,11 +62,11 @@ const Projects = () => {
                   alt=""
                 />
               </div>
-              <div className="child gap-2 absolute duration-700 overflow-hidden w-full md:h-36 h-40 px-3 pt-3 flex flex-col rounded-b-md">
+              <div className="child gap-2 absolute duration-700 overflow-hidden w-full px-3 flex flex-col rounded-b-md">
                 <div className="flex underline underline-offset-4 flex-col text-xl md:text-2xl font-semibold">
                   {project.title}
                 </div>
-                <p className="self-center text-md text-start overflow-ellipsis overflow-hidden">
+                <p className="self-center text-md text-start overflow-ellipsis">
                   {project.description}
                 </p>
                 <a data-tooltip-id="link" data-tooltip-content="Live link" className="flex hover:text-sky-400 hover:underline items-center gap-1 self-center" href={project.link} target="_blank" rel="noreferrer">
