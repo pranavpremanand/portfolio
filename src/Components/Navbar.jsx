@@ -16,7 +16,9 @@ const Navbar = ({ toggleTheme, theme }) => {
 
   return (
     <>
-      <div className="h-16 items-center justify-between w-full flex dark:bg-gray-900 dark:text-gray-50 text-gray-900 bg-gray-100">
+      <div
+        className="h-16 items-center justify-between w-full flex dark:bg-gray-900 dark:text-gray-50 text-gray-900 bg-gray-100"
+      >
         <div
           id="navbar"
           className="hidden w-full md:flex justify-start items-center gap-10 ml-10"
@@ -64,7 +66,9 @@ const Navbar = ({ toggleTheme, theme }) => {
         </div>
       </div>
       {open && (
-        <div className="transition top-16 duration-300 ease-in-out w-full flex md:hidden flex-col py-2 gap-2 bg-gray-300 dark:bg-gray-800 dark:border-gray-100 border rounded-b-lg border-t-0">
+        <div
+          className="transition top-16 duration-300 ease-in-out w-full flex md:hidden flex-col py-2 gap-2 bg-gray-300 dark:bg-gray-800 rounded-b-lg border-t-0"
+        >
           {navbarOptions.map((option) => {
             return (
               <Link

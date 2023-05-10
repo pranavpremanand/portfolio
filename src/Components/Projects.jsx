@@ -48,7 +48,7 @@ const Projects = () => {
       id="projects"
       className="m-5 sm:m-10 p-5 sm:p-10 shadow-lg dark:shadow-slate-700 shadow-slate-300 drop-shadow-md rounded-lg bg-gray-100 dark:bg-gray-900 flex-wrap"
     >
-      <h1 className="dark:text-gray-50 text-2xl uppercase md:text-3xl md:mt-0 font-bold tracking-widest underline text-center md-2 md:mb-5">
+      <h1 className="dark:text-gray-50 text-xl sm:text-2xl uppercase md:text-3xl md:mt-0 font-bold tracking-widest underline text-center md-2 md:mb-5">
         Recent Projects
       </h1>
       <div className="w-full grid grid-cols-1 sm:grid-cols-2 2xl:grid-cols-4 gap-8 text-center py-8 sm:px-0">
@@ -63,15 +63,15 @@ const Projects = () => {
                 />
               </div>
               <div className="child gap-2 absolute duration-700 overflow-hidden w-full px-3 flex flex-col rounded-b-md">
-                <div className="flex underline underline-offset-4 flex-col text-xl md:text-2xl font-semibold">
+                <div className="flex underline underline-offset-4 flex-col text-lg sm:text-xl md:text-2xl font-semibold">
                   {project.title}
                 </div>
-                <p className="self-center text-md text-start overflow-ellipsis">
+                <p className="self-center text-sm sm:text-md text-start overflow-ellipsis">
                   {project.description}
                 </p>
                 <a data-tooltip-id="link" data-tooltip-content="Live link" className="flex hover:text-sky-400 hover:underline items-center gap-1 self-center" href={project.link} target="_blank" rel="noreferrer">
                   <AiOutlineLink className="font-semibold" size={25} />
-                <Tooltip id="link" className="text-md"/>
+                <Tooltip id="link" className="text-sm sm:text-md"/>
                 </a>
                 {/* <div className="w-full flex justify-between items-center">
                   <h3 className="text-md md:text-lg mb-1 font-medium">

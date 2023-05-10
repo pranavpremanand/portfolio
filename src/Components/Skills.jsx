@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import html from "../Imgs/html.png";
 import css from "../Imgs/css.png";
 import github from "../Imgs/github.png";
@@ -18,6 +18,8 @@ import jwt from "../Imgs/jwt.png";
 import npm from "../Imgs/npm.png";
 import githubDark from "../Imgs/github-dark.png";
 import typescript from "../Imgs/typescript.png";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const Skills = ({ theme }) => {
   const skills = [
@@ -125,23 +127,47 @@ const Skills = ({ theme }) => {
       style: "shadow-gray-500",
     },
   ];
+
+  const { ref, inView } = useInView({threshold:0.2});
+  const animation = useAnimation();
+  
+  useEffect(() => {
+    if (inView) {
+      animation.start({
+        x: 0,
+        transition: {
+          type: "spring",
+          duration: 1,
+          bounce: 0.5,
+          stiffness: 100,
+        },
+        
+      });
+    } else {
+      animation.start({ x: "-100vw" });
+    }
+  }, [inView]);
   return (
     <>
       <div
+        ref={ref}
         id="skills"
-        className="m-5 sm:m-10 p-5 sm:p-10 shadow-lg shadow-slate-300 drop-shadow-md rounded-lg bg-gray-50 dark:bg-gray-900 dark:shadow-slate-700 flex-wrap"
+        className="m-5 sm:m-10 p-5 sm:p-10 overflow-hidden shadow-lg shadow-slate-300 drop-shadow-md rounded-lg bg-gray-50 dark:bg-gray-900 dark:shadow-slate-700 flex-wrap"
       >
-        <h1 className="text-2xl md:text-3xl text-center font-bold uppercase tracking-widest underline md-2 md:mb-5">
+        <h1 className="text-xl sm:text-2xl md:text-3xl text-center font-bold uppercase tracking-widest underline md-2 md:mb-5">
           Specialized Skills
         </h1>
-        <div className="w-full grid grid-cols-3 lg:grid-cols-5 gap-8 text-center py-8 sm:px-0">
+        <div
+          // animate={animation}
+          className="w-full grid grid-cols-3 lg:grid-cols-5 gap-8 text-center py-8 sm:px-0"
+        >
           {skills.map(({ id, src, title, style }) => (
             <div
               key={id}
               className={`shadow-md hover:scale-110 cursor-pointer duration-500 py-2 rounded-lg ${style}`}
             >
-              <img src={src} alt="" className="w-16 sm:w-20 mx-auto" />
-              <p className="mt-2 text-xs overflow-hidden sm:text-base cursor-default font-medium">
+              <img src={src} alt="" className="w-[3rem] rounded-md sm:w-20 mx-auto" />
+              <p className="mt-2 text-[12px] overflow-hidden sm:text-base cursor-default font-medium">
                 {title}
               </p>
             </div>

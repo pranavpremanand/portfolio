@@ -8,7 +8,7 @@ const About = () => {
       id="about"
       className="m-5 sm:m-10 p-5 sm:p-10 shadow-lg drop-shadow-md rounded-lg flex-wrap dark:shadow-slate-700 dark:bg-gray-900 shadow-slate-300 bg-gray-50"
     >
-      <h1 className="uppercase text-2xl md:text-3xl md:mt-0 font-bold tracking-widest underline text-center mb-2 md-2 md:mb-5">
+      <h1 className="uppercase text-xl sm:text-2xl md:text-3xl md:mt-0 font-bold tracking-widest underline text-center mb-2 md-2 md:mb-5">
         about me
       </h1>
       <div className="flex flex-wrap gap-5 md:gap-10 justify-start">
@@ -51,7 +51,7 @@ const About = () => {
               <a
                 href={Resume}
                 download="Pranav M - Resume"
-                className="w-32 h-9 transition-all duration-300 ease-in-out font-semibold justify-center tracking-widest rounded-full flex border dark:border-white border-slate-900 border-transparent items-center gap-2 bg-slate-900 text-white dark:bg-white dark:text-slate-900 text-sm uppercase"
+                className="w-32 h-9 transition-all duration-300 ease-in-out font-semibold justify-center tracking-widest rounded-full flex border dark:border-gray-50 border-gray-900 border-transparent items-center gap-2 bg-gray-900 text-gray-50 dark:bg-gray-50 dark:text-gray-900 text-sm uppercase"
               >
                <div>Resume</div>
                 <AiOutlineCloudDownload className="animate-bounce translate-x-36 transition-all ease-in-out duration-300" size={25} />
@@ -61,7 +61,7 @@ const About = () => {
         </div>
       </div>
       <div className="w-full mt-10">
-        <p className="font-medium text-md md:text-lg">
+        <p className="font-medium text-sm md:text-md md:text-lg tracking-widest">
           Hey, It's Pranav. I'm a self-taught Software Developer who have
           passion for creating beautiful, efficient, and responsive web
           applications that are both user-friendly and scalable.

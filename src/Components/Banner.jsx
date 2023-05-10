@@ -13,7 +13,7 @@ const Banner = () => {
         backgroundPosition: "80% 10%",
       }}
     >
-      <div className="absolute flex justify-start flex-col gap-2 items-center text-white bottom-14 sm:bottom-28">
+      <div className="absolute flex justify-start flex-col gap-1 sm:gap-2 items-center text-white bottom-14 sm:bottom-28">
         <h1 className="text-4xl sm:text-5xl font-semibold uppercase">Pranav</h1>
         <TypeAnimation
           sequence={[
@@ -30,7 +30,7 @@ const Banner = () => {
           wrapper="span"
           cursor={true}
           repeat={Infinity}
-          className="text-3xl sm:text-4xl font-medium inline-block"
+          className="text-xl sm:text-4xl font-medium inline-block"
         />
       </div>
       {/* <div className="absolute gap-6 flex w-40 justify-center text-white bottom-14">
