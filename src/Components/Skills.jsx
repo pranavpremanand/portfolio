@@ -13,6 +13,7 @@ import expressWhite from "../Imgs/expressjs-white.png";
 import mui from "../Imgs/MUI.png";
 import nextjs from "../Imgs/nextjs.png";
 import redux from "../Imgs/redux.png";
+import sass from "../Imgs/sass.png";
 import postgresql from "../Imgs/postgresql.png";
 import jwt from "../Imgs/jwt.png";
 import npm from "../Imgs/npm.png";
@@ -83,6 +84,12 @@ const Skills = ({ theme }) => {
       src: css,
       title: "CSS3",
       style: "shadow-blue-500",
+    },
+    {
+      id: 16,
+      src: sass,
+      title: "SASS",
+      style: "shadow-pink-700",
     },
     {
       id: 9,
@@ -159,14 +166,14 @@ const Skills = ({ theme }) => {
         </h1>
         <div
           // animate={animation}
-          className="w-full grid grid-cols-3 lg:grid-cols-5 gap-8 text-center py-8 sm:px-0"
+          className="w-full grid grid-cols-3 lg:grid-cols-5 gap-2 sm:gap-8 text-center py-8 sm:px-0"
         >
           {skills.map(({ id, src, title, style }) => (
             <div
               key={id}
-              className={`shadow-md hover:scale-110 cursor-pointer duration-500 py-2 rounded-lg ${style}`}
+              className={`shadow-md md:hover:scale-110 h-[6.5rem] cursor-pointer duration-500 py-2 rounded-lg ${style}`}
             >
-              <img src={src} alt="" className="w-[3rem] rounded-md sm:w-20 mx-auto" />
+              <img src={src} alt="" className="w-[3rem] rounded-sm sm:w-20 mx-auto" />
               <p className="mt-2 text-[12px] overflow-hidden sm:text-base cursor-default font-medium">
                 {title}
               </p>
