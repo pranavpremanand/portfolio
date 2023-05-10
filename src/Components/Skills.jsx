@@ -171,7 +171,7 @@ const Skills = ({ theme }) => {
           {skills.map(({ id, src, title, style }) => (
             <div
               key={id}
-              className={`shadow-md md:hover:scale-110 h-[6.5rem] cursor-pointer duration-500 py-2 rounded-lg ${style}`}
+              className={`shadow-md md:hover:scale-110 h-[6.5rem] sm:h-auto cursor-pointer duration-500 py-2 rounded-lg ${style}`}
             >
               <img src={src} alt="" className="w-[3rem] rounded-sm sm:w-20 mx-auto" />
               <p className="mt-2 text-[12px] overflow-hidden sm:text-base cursor-default font-medium">

@@ -61,7 +61,7 @@ const About = () => {
         </div>
       </div>
       <div className="w-full mt-10">
-        <p className="font-medium text-sm md:text-md md:text-lg tracking-widest">
+        <p className="font-medium text-sm md:text-md md:text-lg leading-6 tracking-widest">
           Hey, It's Pranav. I'm a self-taught Software Developer who have
           passion for creating beautiful, efficient, and responsive web
           applications that are both user-friendly and scalable.
